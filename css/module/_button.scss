@@ -1,0 +1,13 @@
+.ebtn{
+    font-size: 22px;
+    color:#fff;
+    border: 3px solid #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    text-decoration: none;
+    @include trasition();
+}
+.ebtn:hover{
+    background: #fff;
+    color: $color4;
+}
