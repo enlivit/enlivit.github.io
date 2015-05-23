@@ -7,6 +7,7 @@ jQuery(document).ready(function ($) {
     $(".mobile-menu-btn").click(function () {
         $(".body-wrap").toggleClass("body-left");
         $(".mobile-menu").toggleClass("menu-left");
+		
     });
 
     $(".godown").click(function (e) {

@@ -459,7 +459,7 @@ h2{text-transform: uppercase;}
 @media(max-width:900px){
     .body-wrap{@include trasition();left: 0px; position: relative;z-index: 9;}
     .body-left{left: -250px;}
-    .nav1    { position: fixed;
+    .nav1    { position: relative;
                ul{display: none;}   
     }
     .mobile-menu-btn{display: inline-block;}

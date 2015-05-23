@@ -498,7 +498,7 @@ h2 {
     left: -250px; }
 
   .nav1 {
-    position: fixed; }
+    position: relative; }
     .nav1 ul {
       display: none; }
 
