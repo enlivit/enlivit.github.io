@@ -485,6 +485,10 @@ h2 {
     li img {
       height: 100%; } }
 @media (max-width: 900px) {
+  .nav1 h1 {
+    margin: 0px;
+    padding: 9px 0; }
+
   .body-wrap {
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -503,7 +507,13 @@ h2 {
       display: none; }
 
   .mobile-menu-btn {
-    display: inline-block; }
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
 
   .mobile-menu {
     display: block; }
@@ -515,7 +525,10 @@ h2 {
     height: 260px; }
     .section2 .project_thumb
     li img {
-      height: 100%; } }
+      height: 100%; }
+
+  .menu-btn-left {
+    right: 250px; } }
 @media (max-width: 767px) {
   h2 {
     font-size: 24px !important; }

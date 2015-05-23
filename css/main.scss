@@ -457,12 +457,13 @@ h2{text-transform: uppercase;}
 
 }
 @media(max-width:900px){
+	.nav1 h1 {  margin: 0px;  padding: 9px 0;}
     .body-wrap{@include trasition();left: 0px; position: relative;z-index: 9;}
     .body-left{left: -250px;}
     .nav1    { position: relative;
                ul{display: none;}   
     }
-    .mobile-menu-btn{display: inline-block;}
+    .mobile-menu-btn{display: inline-block; position: fixed;right: 0px; @include trasition();}
     .mobile-menu{display: block;}
     .section2 .project_thumb 
     li 
@@ -473,6 +474,10 @@ h2{text-transform: uppercase;}
           height: 100%;
       }
     }
+	
+	.menu-btn-left{
+    right: 250px;
+}
 
 }
 
