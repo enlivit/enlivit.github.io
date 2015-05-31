@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html >
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -20,9 +20,11 @@
         <link href="js/vendor/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css"/>    
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<!--		    <base href="/">-->
     </head>
-    <body>
-        <div class="mobile-menu">
+    <body >
+     
+	   <div class="mobile-menu">
             <ul>
                 <li><a href="#section1">Expertise</a></li>
                 <li><a href="#section2">Work</a></li>
@@ -35,7 +37,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <a href="#"><h1 class="logo shake shake-little" data-wow-offset="2"><img src="img/logo.png" alt="enliv" /></h1></a>
+                            <a href="#/"><h1 class="logo shake shake-little" data-wow-offset="2"><img src="img/logo.png" alt="enliv" /></h1></a>
                             <ul>
                                 <li><a href="#section1">Expertise</a></li>
                                 <li><a href="#section2">Work</a></li>
@@ -51,7 +53,8 @@
                 </div>
 
             </nav>
-            <header class="header">
+		
+			            <header class="header">
                 <div class="center cloud">
                     <ul id="scene">
                         <li class="layer" data-depth="0.10"><img src="img/cloud_PNG16.png"></li>
@@ -70,7 +73,9 @@
                 </div>
                 <a class="godown wow bounce" data-wow-iteration="5"><i class="fa fa-angle-down"></i></a>
             </header>
-            <section id="section1" class="section1">
+		
+		
+<section id="section1" class="section1">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -228,7 +233,11 @@
                         <div class="col-sm-12">
                             <h2 class="bottom_bar">ABOUT US</h2>
                             <p>Founded in 2015, Enliv Information Technologies is a talented team of designers, developers and strategists located in Nepal.</p>
-                            <a class="ebtn" href="#">Click Here</a>
+                            <a class="ebtn" href="#/about">Click Here</a>
+							  <div ng-app="single-page-app"  ng-controller="cfgController" >
+		<div ng-view>            
+        </div>
+			</div>
                             <h2>WHAT PEOPLE ARE SAYING </h2>
                             <div id="tm" class="owl-carousel">
                                 <div> 
@@ -275,6 +284,8 @@
                     </div>
                 </div>       
             </section>
+     
+		
             <footer id="footer" class="footer">
                 <div class="container">
                     <div class="row">
@@ -322,8 +333,11 @@
 
 
             <div class="footer-btm"><span>&copy;Enliv Information Technology. All rights reserved.</span></div>
+			
 
         </div>
+		
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -333,6 +347,12 @@
         <!--<script src="js/vendor/bootstrap.min.js"></script>-->
         <script src="js/wow.min.js" type="text/javascript"></script>
         <script src="js/vendor/parallax-master/source/parallax.js"></script>
+<!--		angular start-->
+		   <script src="js/angular.min.js" type="text/javascript"></script>
+        <script src="js/angular-resource.min.js" type="text/javascript"></script>
+        <script src="js/angular-route.min.js" type="text/javascript"></script>
+        <script src="js/controller.js" type="text/javascript"></script>
+<!--		angular end-->
         <script src="js/main.js"></script>
     </body>
 </html>

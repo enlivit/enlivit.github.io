@@ -472,6 +472,16 @@ h2 {
 .menu-left {
   right: 0px; }
 
+.about-us {
+  margin: 0;
+  padding: 0; }
+  .about-us a {
+    font-size: 14px;
+    color: #1d2326;
+    font-weight: 700; }
+    .about-us a:hover {
+      color: #6a6a61; }
+
 /*MEDIA QUERIES*/
 @media (max-width: 1260px) {
   .header {

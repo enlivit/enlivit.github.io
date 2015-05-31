@@ -12,7 +12,6 @@ section{position: relative; padding: 74px 0; h2{margin-bottom: 80px; color: #000
 /*h4{font-size: 18;}
 h3{font-size: 24px;}*/
 h2{text-transform: uppercase;}
-
 .nav1{
     position: fixed;
     top: 0px;
@@ -437,6 +436,17 @@ h2{text-transform: uppercase;}
 }
 .menu-left{
     right: 0px;
+}
+.about-us{
+	margin: 0; padding: 0;
+	a{
+		font-size: 14px;
+		color:$color4;
+		font-weight: 700;
+		&:hover{
+			color: $color5;
+	}
+	}
 }
 
 /*MEDIA QUERIES*/
