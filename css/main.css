@@ -51,6 +51,12 @@ html, body {
 .col5-wrap {
   width: 20%; }
 
+.s-3-2 {
+  width: 66.66%; }
+
+.s-3-1 {
+  width: 33.33%; }
+
 p {
   font-size: 16px; }
 
@@ -258,11 +264,17 @@ h2 {
 .section3 {
   /*margin-bottom: 586px;*/
   /*background-color: $color1;*/
-  background: url(../img/1389017.jpg);
   /*    background-size: 200%;*/
   background-position: center;
   /*background-attachment: fixed;*/
   text-align: center; }
+  .section3 .bg {
+    background-color: #227fbb; }
+  .section3 .img {
+    background: url(../img/computer-people1.jpg);
+    height: 402px;
+    background-size: 200%;
+    background-position: center; }
   .section3 p, .section3 h2 {
     color: #fff !important; }
   .section3 .ebtn {

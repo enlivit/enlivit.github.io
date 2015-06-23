@@ -193,10 +193,19 @@ h2{text-transform: uppercase;}
 .section3{
     /*margin-bottom: 586px;*/
     /*background-color: $color1;*/
-    background: url(../img/1389017.jpg);
+
     /*    background-size: 200%;*/
     background-position: center;
     /*background-attachment: fixed;*/
+    .bg{
+        background-color: $color2;
+    }
+    .img{
+            background: url(../img/computer-people1.jpg);
+             height: 402px;
+            background-size: 200%;
+            background-position: center;
+    }
     text-align: center;
     p,h2{color: #fff !important;}
     .ebtn{
