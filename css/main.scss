@@ -9,15 +9,13 @@ body{ font-family: 'Lato', sans-serif;   overflow-x: hidden; line-height: 1.3em;
 .body-wrap{height: 100%; background-color: #fff;}
 p{font-family: 'Lato', sans-serif; font-weight: 300;  }//'Merriweather', serif;}
 section{position: relative; padding: 74px 0; h2{margin-bottom: 80px; color: #000 !important; font-weight: 700;}}
-/*h4{font-size: 18;}
-h3{font-size: 24px;}*/
 h2{text-transform: uppercase;}
 .nav1{
     position: fixed;
     top: 0px;
     z-index: 9999;
     width: 100%;
-    background-color: $color4;
+    background: rgba(43,62,81,.9);
     h1{
         margin: 0px;
         @extend .left;
@@ -124,13 +122,11 @@ h2{text-transform: uppercase;}
 .section2{
     text-align: center;
     background: $color1;
-    /*cursor:pointer;*/
-    /*.col-sm-6,.col-md-4{padding: 0.5%;}*/
 
     .col3-wrap{
-       width: 33.333%;
-          font-size: 16px;
-           padding: 5px;
+        width: 33.333%;
+        font-size: 16px;
+        padding: 5px;
         @extend .left;
         .col{
             @extend .boxsizing;
@@ -201,10 +197,10 @@ h2{text-transform: uppercase;}
         background-color: $color2;
     }
     .img{
-            background: url(../img/computer-people1.jpg);
-             height: 402px;
-            background-size: 200%;
-            background-position: center;
+        background: url(../img/computer-people1.jpg);
+        height: 402px;
+        background-size: 200%;
+        background-position: center;
     }
     text-align: center;
     p,h2{color: #fff !important;}
@@ -251,27 +247,39 @@ h2{text-transform: uppercase;}
         .owl-item{
             font-family: 'Merriweather', serif;
             font-size: 18px;
-            color: #fff;
+            color: #000;
             line-height: 1.3em;
             font-weight: 300;
+
         }
         .client{
-            width: 65%;            
+            width: 72%;            
             margin:0 auto;
             padding-top: 20px;
+                 transform: translateX(-19%);
+                    -webkit-transform: translateX(-19%);
             .right{
                 position: relative;
-                top: 32px;
+            
                 h4{
                     font-family: 'Merriweather', serif;
                     font-size: 24px;
-                    color: #fff;
+                    color: #000;
                     line-height: 1em;
                 }
                 .position{
                     font-family: 'Merriweather', serif;
                     font-size: 18px;
                     color: $color5;
+                }
+            }
+            .left{
+                img{
+                    width: 50%;
+                    position: relative;
+                    /*top: 48px;*/
+                    right: -118px;
+               
                 }
             }
         }
@@ -287,7 +295,7 @@ h2{text-transform: uppercase;}
     background: rgba(0,0,0,0.9);
     padding: 100px 0;
     font-size:24px;
-    color: $color2;
+    color: $color1;
 
     h2{font-weight: 600;}
     a{ 
@@ -347,7 +355,7 @@ h2{text-transform: uppercase;}
             padding: 10px 25px;
             display: inline-block;
             text-decoration: none;
-            background: $color3;
+            background: $color6;
         }
         .ebtn:hover{
             color: $color4;
