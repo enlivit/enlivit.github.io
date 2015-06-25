@@ -73,8 +73,8 @@ p {
 
 .ebtn {
   font-size: 22px;
-  color: #fff;
-  border: 3px solid #fff;
+  color: #2b3e51;
+  border: 3px solid #2b3e51;
   padding: 10px 25px;
   display: inline-block;
   text-decoration: none;
@@ -85,7 +85,8 @@ p {
 
 .ebtn:hover {
   background: #fff;
-  color: #2b3e51; }
+  color: #2b3e51;
+  border: 3px solid #fff; }
 
 .container {
   max-width: 1170px;
@@ -181,7 +182,6 @@ h2 {
       animation-duration: 2s; }
 
 .section1 {
-  /*background-color: $color1;*/
   text-align: center; }
   .section1 .col3-wrap {
     padding-bottom: 20px; }
@@ -275,11 +275,11 @@ h2 {
     color: #fff !important; }
   .section3 .ebtn {
     color: #fff;
-    border-color: #2b3e51;
+    border-color: #fff;
     margin: 80px 0 120px 0; }
     .section3 .ebtn:hover {
-      background-color: #2b3e51;
-      color: #fff; }
+      background-color: #fff;
+      color: #2b3e51; }
   .section3 #tm {
     position: relative;
     width: 660px;
@@ -402,7 +402,7 @@ h2 {
     padding: 10px 25px;
     display: inline-block;
     text-decoration: none;
-    background: #1cd088; }
+    background: #17c27d; }
   .footer .contact-form .ebtn:hover {
     color: #2b3e51;
     background: #fff; }

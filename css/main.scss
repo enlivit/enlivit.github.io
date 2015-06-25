@@ -100,7 +100,6 @@ h2{text-transform: uppercase;}
 } 
 
 .section1{
-    /*background-color: $color1;*/
     text-align: center;
     .col3-wrap{
         h3{
@@ -206,11 +205,11 @@ h2{text-transform: uppercase;}
     p,h2{color: #fff !important;}
     .ebtn{
         color: #fff;
-        border-color: $color3;
+        border-color: #fff;
         margin:80px 0 120px 0;
         &:hover{
-            background-color: $color3;
-            color: #fff;
+            background-color: #fff;
+            color: $color3;
         }
 
     }
