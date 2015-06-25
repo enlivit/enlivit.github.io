@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
 
 
 //google maps show event
-    $(".view_map").click(function (e) {
+    $(".view_map,.map-overlay").click(function (e) {
         e.preventDefault();
 //        $(".footer").slideUp();
         $(".map-overlay").fadeOut();

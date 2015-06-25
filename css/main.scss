@@ -186,12 +186,15 @@ h2{text-transform: uppercase;}
         }*/
 }
 .section3{
-    /*margin-bottom: 586px;*/
-    /*background-color: $color1;*/
-
-    /*    background-size: 200%;*/
+  
     background-position: center;
-    /*background-attachment: fixed;*/
+    .about-wrapper{
+        padding: 30px 10px 10px 10px;
+        @extend .boxsizing;
+        h2{
+            margin-bottom: 40px;
+        }
+    }
     .bg{
         background-color: $color2;
     }
@@ -211,7 +214,6 @@ h2{text-transform: uppercase;}
             background-color: #fff;
             color: $color3;
         }
-
     }
     #tm{//testimonial
         position:relative;
@@ -362,11 +364,17 @@ h2{text-transform: uppercase;}
         }
 
     }
-    .social{width: 500px; margin: 0 auto; 
+    .social{width: 243px; margin: 0 auto; 
             li{
                 @extend .left;
                 margin-right: 36px;
                 z-index: 9999;
+                a{
+                     color:$color6;
+                     &:hover{
+                         color: #fff;
+                     }
+                }
             }
     }
 }
@@ -390,7 +398,7 @@ h2{text-transform: uppercase;}
     .map-overlay{
         display: block;
         content: "";
-        background: rgba(0,0,0,0.9);
+        background: rgba(0,0,0,0.8);
         position: absolute;
         top: 0px;
         left: 0px;
@@ -404,7 +412,7 @@ h2{text-transform: uppercase;}
 
 .close1{
     display: none;
-    /*position: absolute;*/
+    position: absolute;
     color: $color3;
     font-size: 30px;
     /*bottom: -60px;*/

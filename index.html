@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
         <link rel="stylesheet" href="css/animate.css">
-        <link href="css/csshake.min.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="css/csshake.min.css" rel="stylesheet" type="text/css"/>-->
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
         <link href="js/vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="js/vendor/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css"/>    
@@ -37,7 +37,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <a href="#/"><h1 class="logo shake shake-little" data-wow-offset="2"><img src="img/logo.png" alt="enliv" /></h1></a>
+                            <a href="#/"><h1 class="logo" data-wow-offset="2"><img src="img/logo.png" alt="enliv" /></h1></a>
                             <ul>
                                 <li><a href="#section1">Expertise</a></li>
                                 <li><a href="#section2">Work</a></li>
@@ -227,35 +227,35 @@
                         <div class="col-sm-12">
 
                             <div class="col3-wrap">
-                                <div class="col">
+                                <div class="col wow fadeIn" data-wow-delay="0.25s">
                                     <h3> Ideate</h3>
                                     <p>We take pride in understanding business values and charting rock-solid development plans.</p>
                                 </div>
 
                             </div>
                             <div class="col3-wrap">
-                                <div class="col">
+                                <div class="col wow fadeIn" data-wow-delay="0.5s">
                                     <h3>Design</h3>
                                     <p>We're passionate about turning your people, processes, and pixels into a beautiful experience.</p>
                                 </div>
                             </div>
                             <div class="col3-wrap">
-                                <div class="col">
-                                <h3>Build</h3>
-                                <p>We build robust and awesome deliverables that will help bring a smile on your face.</p>
-                            </div>
+                                <div class="col wow fadeIn" data-wow-delay="0.75s">
+                                    <h3>Build</h3>
+                                    <p>We build robust and awesome deliverables that will help bring a smile on your face.</p>
+                                </div>
                             </div>  
                             <div class="col3-wrap">
-                                <div class="col">
-                                <h3>Launch</h3>
-                                <p>We understand your market and know how you can get the most out of your product.</p>
-                            </div>
+                                <div class="col wow fadeIn" data-wow-delay="1s">
+                                    <h3>Launch</h3>
+                                    <p>We understand your market and know how you can get the most out of your product.</p>
+                                </div>
                             </div>
                             <div class="col3-wrap">
-                                <div class="col">
-                                <h3>Support</h3>
-                                <p>We help you evolve, address and incorporate market feedback throughout the product lifecycle.</p>
-                            </div>
+                                <div class="col wow fadeIn" data-wow-delay="1.25s">
+                                    <h3>Support</h3>
+                                    <p>We help you evolve, address and incorporate market feedback throughout the product lifecycle.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -268,18 +268,20 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="s-3-2 left bg">
-                                <h2 class="bottom_bar">ABOUT US</h2>
-                            <p>Founded in 2015, Enliv Information Technologies is a talented team of designers, developers and strategists located in Nepal.</p>
-                            <a class="ebtn" href="#/about">Click Here</a>
-                            <div ng-app="single-page-app"  ng-controller="cfgController" >
-                                <div ng-view>            
+                                <div class="about-wrapper">
+                                    <h2 class="bottom_bar">ABOUT US</h2>
+                                    <p>Founded in 2015, Enliv Information Technologies is a talented team of designers, developers and strategists located in Nepal.</p>
+                                    <a class="ebtn" href="#/about">Click Here</a>
+                                    <div ng-app="single-page-app"  ng-controller="cfgController" >
+                                        <div ng-view>            
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
                             <div class="s-3-1 left img">
-                                
+
                             </div>
-                            
+
                             <h2>WHAT PEOPLE ARE SAYING </h2>
                             <div id="tm" class="owl-carousel">
                                 <div> 
@@ -346,7 +348,7 @@
                                 <li>RATOPUL, KATHMANDU</li>
                                 <li>4489592, 977-9803930194</li>
                                 <li><a href="#">info@enlivit.com</a></li>
-                                <li><a href="#" class="view_map">View Map</a>     <i class="fa fa-close close1"></i></li>
+                                <li><a href="#" class="view_map">View Map</a>    </li>
                             </ul>
                         </div>
                         <div class="col-sm-4 col-xs-12">
@@ -362,15 +364,20 @@
 
                 </div>
                 <ul class="social">
-                    <li><a href="#"><img class="wow fadeIn" data-wow-delay="0.25s" src="img/facebook.jpg" alt="facebook"/></a></li>
-                    <li><a href="#"><img class="wow fadeIn" data-wow-delay="0.50s" src="img/twitter.jpg" alt="twitter"/></a></li>
-                    <li><a href="#"><img class="wow fadeIn" data-wow-delay="0.75s" src="img/linkedin'.jpg" alt="linkedin"/></a></li>
-                    <li><a href="#"><img class="wow fadeIn" data-wow-delay="1s" src="img/github.jpg" alt="github"/></a></li>
+
+                    <li><a href="#" class="wow fadeIn" data-wow-delay="0.25s"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="wow fadeIn" data-wow-delay="0.50s"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="wow fadeIn" data-wow-delay="0.75s"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#" class="wow fadeIn" data-wow-delay="1s"><i class="fa fa-github"></i></a></li>
+                    
                 </ul>
+               
             </footer>
             <div class="map-wrapper">
+                 <i class="fa fa-close close1"></i>
                 <div id="map-canvas"></div>    
                 <div class="map-overlay"></div>
+                 
             </div>
 
 
