@@ -18,7 +18,7 @@ html, body {
   height: 100%; }
 
 /*COLORS LISTs*/
-.left, .nav1 h1, .nav1 ul li, .section2 .col3-wrap, .footer .social li {
+.left, .nav1 h1, .nav1 ul li, .section2 .col3-wrap, .section4 .col5-wrap, .footer .social li {
   float: left; }
 
 .right, .nav1 ul, .mobile-menu-btn {
@@ -66,7 +66,7 @@ p {
   .godown .fa-angle-down {
     font-size: 60px; }
 
-.boxsizing, .section2 .col3-wrap .col, .section3 .about-wrapper, .footer .contact-form input, .footer .contact-form textarea {
+.boxsizing, .section2 .col3-wrap .col, .section3 .about-wrapper, .section4 .col5-wrap, .footer .contact-form input, .footer .contact-form textarea {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
@@ -331,11 +331,22 @@ h2 {
           font-family: 'Merriweather', serif;
           font-size: 18px;
           color: #2c97de; }
-      .section3 #tm .client .left img, .section3 #tm .client .nav1 h1 img, .nav1 .section3 #tm .client h1 img, .section3 #tm .client .nav1 ul li img, .nav1 ul .section3 #tm .client li img, .section3 #tm .client .section2 .col3-wrap img, .section2 .section3 #tm .client .col3-wrap img, .section3 #tm .client .footer .social li img, .footer .social .section3 #tm .client li img {
+      .section3 #tm .client .left img, .section3 #tm .client .nav1 h1 img, .nav1 .section3 #tm .client h1 img, .section3 #tm .client .nav1 ul li img, .nav1 ul .section3 #tm .client li img, .section3 #tm .client .section2 .col3-wrap img, .section2 .section3 #tm .client .col3-wrap img, .section3 #tm .client .section4 .col5-wrap img, .section4 .section3 #tm .client .col5-wrap img, .section3 #tm .client .footer .social li img, .footer .social .section3 #tm .client li img {
         width: 50%;
         position: relative;
         /*top: 48px;*/
         right: -118px; }
+
+.section4 {
+  text-align: center; }
+  .section4 .col5-wrap {
+    border: 1px solid #c0c0c0;
+    height: 200px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    position: relative; }
+    .section4 .col5-wrap img {
+      max-width: 100%; }
 
 .footer {
   position: relative;

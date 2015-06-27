@@ -288,7 +288,21 @@ h2{text-transform: uppercase;}
 
 
 }
-
+.section4{
+    text-align: center;
+    .col5-wrap{
+        @extend .boxsizing;
+        border: 1px solid #c0c0c0;
+        height: 200px;
+        @extend .left;
+        margin-right: -1px;
+        margin-bottom: -1px;
+        position: relative;
+        img{
+            max-width: 100%;
+        }
+    }
+}
 .footer{
     position: relative;
     bottom: 0;
