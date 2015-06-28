@@ -33,3 +33,7 @@
     box-sizing: border-box;
 }
 
+@keyframes example {
+    from {width:0%;}
+    to {width:100%;}
+}

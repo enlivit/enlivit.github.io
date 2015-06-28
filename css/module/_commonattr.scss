@@ -12,16 +12,21 @@
     left:0px;}
 .bottom_bar{
     position: relative;
+    display:inline-block;
     &:after{
         content: "";
         position: absolute;
-        display:inline-block;
+        display:inline;
         width: 97px;
         height: 5px;  
         background-color: $color2;
         bottom: -25px;
         text-align: center;
-        right: 46%;
+        right: 50%;
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translate(50%);
+        -ms-transform: translate(50%);
     }
 
 }

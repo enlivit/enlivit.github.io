@@ -17,6 +17,11 @@ html, body {
   width: 100%;
   height: 100%; }
 
+@keyframes example {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
 /*COLORS LISTs*/
 .left, .nav1 h1, .nav1 ul li, .section2 .col3-wrap, .section4 .col5-wrap, .footer .social li {
   float: left; }
@@ -36,17 +41,22 @@ html, body {
   left: 0px; }
 
 .bottom_bar {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
   .bottom_bar:after {
     content: "";
     position: absolute;
-    display: inline-block;
+    display: inline;
     width: 97px;
     height: 5px;
     background-color: #227fbb;
     bottom: -25px;
     text-align: center;
-    right: 46%; }
+    right: 50%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translate(50%);
+    -ms-transform: translate(50%); }
 
 .col5-wrap {
   width: 20%; }
@@ -261,8 +271,16 @@ h2 {
   background: #ecf0f1;
   background-position: center;
   text-align: center; }
+  .section3 .dark-color {
+    color: #2b3e51 !important;
+    padding-top: 30px; }
+  .section3 h2:after {
+    background-color: #fff; }
+  .section3 .slider-wrapper {
+    margin-top: 20px; }
   .section3 .about-wrapper {
-    padding: 30px 10px 10px 10px; }
+    padding: 30px 10px 10px 10px;
+    overflow: hidden; }
     .section3 .about-wrapper h2 {
       margin-bottom: 40px; }
   .section3 .bg {
@@ -294,7 +312,7 @@ h2 {
       height: 40px;
       position: absolute;
       top: -38px;
-      left: -50px;
+      left: -70px;
       background-size: cover;
       /*opacity: 0.2;*/ }
     .section3 #tm:after {
@@ -306,7 +324,7 @@ h2 {
       height: 42px;
       position: absolute;
       bottom: 174px;
-      right: -50px;
+      right: -70px;
       background-size: cover;
       /*opacity: 0.2;*/ }
     .section3 #tm .owl-item {
@@ -379,16 +397,16 @@ h2 {
     .footer .address li .view_map {
       text-decoration: underline; }
   .footer .contact-form ::-webkit-input-placeholder {
-    color: #6a6a61;
+    color: #227fbb;
     font-size: 16px; }
   .footer .contact-form :-moz-placeholder {
-    color: #6a6a61;
+    color: #227fbb;
     font-size: 16px; }
   .footer .contact-form ::-moz-placeholder {
-    color: #6a6a61;
+    color: #227fbb;
     font-size: 16px; }
   .footer .contact-form :-ms-input-placeholder {
-    color: #6a6a61;
+    color: #227fbb;
     font-size: 16px; }
   .footer .contact-form input, .footer .contact-form textarea {
     width: 100%;
@@ -454,7 +472,21 @@ h2 {
     left: 0px;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     /*z-index: 9;*/ }
+    .map-wrapper .map-overlay:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      height: 1px;
+      background: #2c97de; }
+    .map-wrapper .map-overlay:hover:after {
+      animation-name: example;
+      animation-duration: 4s; }
 
 .close1 {
   display: none;

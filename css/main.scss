@@ -186,10 +186,23 @@ h2{text-transform: uppercase;}
         }*/
 }
 .section3{
+    .dark-color{color: $color3 !important; padding-top: 30px;  }
   background: $color1;
     background-position: center;
+    h2{
+        &:after{
+            background-color: #fff;
+        }
+    }
+    .slider-wrapper{
+        margin-top: 20px;
+        //overflow: hidden;
+        //background-color: red;
+    }
     .about-wrapper{
         padding: 30px 10px 10px 10px;
+        overflow: hidden;
+        
         @extend .boxsizing;
         h2{
             margin-bottom: 40px;
@@ -226,7 +239,7 @@ h2{text-transform: uppercase;}
             height: 40px;
             position: absolute;
             top: -38px;
-            left: -50px;
+            left: -70px;
             background-size: cover;
             /*opacity: 0.2;*/
         }
@@ -239,7 +252,7 @@ h2{text-transform: uppercase;}
             height: 42px;
             position: absolute;
             bottom: 174px;
-            right: -50px;
+            right: -70px;
             background-size: cover;
             /*opacity: 0.2;*/
         }
@@ -338,9 +351,9 @@ h2{text-transform: uppercase;}
         }
     }
     .contact-form{
-        $color: #6a6a61;
+        //$color: #6a6a61;
         $font_size: 16px;
-        @include placeholder($color,$font_size);
+        @include placeholder($color2,$font_size);
         input,textarea{
             width: 100%;
             background-color: transparent;
@@ -418,6 +431,26 @@ h2{text-transform: uppercase;}
         left: 0px;
         width: 100%;
         height: 100%;
+        cursor: pointer;
+        @include trasition;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            height: 1px;
+            background: $color5;
+            //width: 0%;
+        }
+        &:hover{
+          //  border-bottom: 1px solid $color5;
+          &:after{
+             animation-name: example;
+    animation-duration: 4s;
+          }
+            
+            
+        }
+       
         /*z-index: 9;*/
     }
 }
