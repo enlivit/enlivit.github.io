@@ -33,7 +33,19 @@
     box-sizing: border-box;
 }
 
-@keyframes example {
+@-webkit-keyframes line_animation {
+    from {width:0%;}
+    to {width:100%;}
+}
+@-moz-keyframes line_animation {
+    from {width:0%;}
+    to {width:100%;}
+}
+@-o-keyframes  line_animation {
+    from {width:0%;}
+    to {width:100%;}
+}
+@keyframes line_animation {
     from {width:0%;}
     to {width:100%;}
 }
