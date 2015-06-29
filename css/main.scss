@@ -28,9 +28,10 @@ h2{text-transform: uppercase;}
             @extend .left;
             a{ color: $color1;
                display: inline-block;
-               font-weight: 700;
-               font-size: 16px;
+               //font-weight: 700;
+               font-size: 14px;
                text-transform: uppercase;
+               letter-spacing: 3px;
                padding: 23px 14px;
                @include trasition();
                &.nav1hover, &:hover{
