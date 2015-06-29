@@ -65,7 +65,7 @@ html, body {
     width: 97px;
     height: 5px;
     background-color: #227fbb;
-    bottom: -25px;
+    bottom: -10px;
     text-align: center;
     right: 50%;
     transform: translateX(50%);
@@ -188,7 +188,7 @@ h2 {
       width: 640px;
       display: inline-block; }
       .header .welcome_msg .inner h2 {
-        font-size: 48px;
+        font-size: 40px;
         font-weight: 700;
         margin-bottom: 1em; }
       .header .welcome_msg .inner p {
