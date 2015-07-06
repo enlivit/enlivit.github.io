@@ -80,7 +80,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4e5e', end
         text-transform: uppercase;
         z-index: 999;
         .inner{
-            width: 640px;
+            width: 665px;
             display: inline-block;
             h2{
                 font-size: 40px;
@@ -111,20 +111,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4e5e', end
 
 .section1{
     text-align: center;
+    
     .col3-wrap{
+            cursor: pointer;
+          @extend .boxsizing;
+          @include trasition;
+              /*background: $color2;*/
+        border: 1px solid $color1;
+           /*color:$color1;*/
         h3{
             padding: 20px 0 5px 0;
         }  
         p{
             font-size: 16px;
+             @extend .boxsizing;
+              padding: 20px;
+                /*background: $color2;*/
         }
         .img-wrap{
-            height: 100px;
+            @extend .boxsizing;
+            font-size:84px;
+          
+             /*background: $color2;*/
+            color:#2c97de;;
+              padding: 20px;
+            
             img{
                 height: 100%;;
             }
         }
         padding-bottom: 20px;
+        &:hover{
+            background: $color2;
+            color: $color1;
+            .img-wrap{
+                color: $color1;
+            }
+        }
     }
 }
 
