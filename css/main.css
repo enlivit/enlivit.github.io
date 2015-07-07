@@ -141,6 +141,9 @@ section {
 h2 {
   text-transform: uppercase; }
 
+a:hover, a:active, a:focus {
+  outline: 0; }
+
 .nav1 {
   position: fixed;
   top: 0px;
