@@ -18,17 +18,17 @@ a:hover, a:active, a:focus{outline: 0;}
     z-index: 9999;
     width: 100%;
     background:rgba(0,0,0,.9);
-/*    background: rgba(43,62,81,.95);
-   background: #3e4e5e;
-background: -moz-linear-gradient(-45deg, #3e4e5e 20%, #283a4c 20%, #3e4e5e 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(20%,#3e4e5e), color-stop(20%,#283a4c), color-stop(100%,#3e4e5e));
-background: -webkit-linear-gradient(-45deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
-background: -o-linear-gradient(-45deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
-background: -ms-linear-gradient(-45deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
-background: linear-gradient(135deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4e5e', endColorstr='#3e4e5e',GradientType=1 );*/
-   
-h1{
+    /*    background: rgba(43,62,81,.95);
+       background: #3e4e5e;
+    background: -moz-linear-gradient(-45deg, #3e4e5e 20%, #283a4c 20%, #3e4e5e 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(20%,#3e4e5e), color-stop(20%,#283a4c), color-stop(100%,#3e4e5e));
+    background: -webkit-linear-gradient(-45deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
+    background: -o-linear-gradient(-45deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
+    background: -ms-linear-gradient(-45deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
+    background: linear-gradient(135deg, #3e4e5e 20%,#283a4c 20%,#3e4e5e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4e5e', endColorstr='#3e4e5e',GradientType=1 );*/
+
+    h1{
         margin: 0px;
         @extend .left;
         padding-top: 8px;       
@@ -60,11 +60,12 @@ h1{
     overflow: hidden;
     width: 100%;
     height: 100%;
-    background:  linear-gradient(
+/*    background:  linear-gradient(
         rgba(255,255,255,.8), 
         rgba(255,255,255,.8)
         ),
-        url(../img/banner.jpg);
+        url(../img/banner.jpg);*/
+background: url(../img/himal1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto; 
@@ -76,10 +77,12 @@ h1{
         position: relative;
         ul{ 
             left: 20%;
+            color: $color1;
+          
         }
     }
     .welcome_msg{
-        color: #000;
+        color: $color1;
         position: absolute;
         text-transform: uppercase;
         z-index: 999;
@@ -96,7 +99,7 @@ h1{
                 line-height: 1.3em;
             }
 
-            .ebtn{margin-top: 30px;}
+            .ebtn{margin-top: 30px; border-color: $color1; color: $color1; &:hover{border-color: $color2; color: $color3; }}
 
         }
 
@@ -115,31 +118,31 @@ h1{
 
 .section1{
     text-align: center;
-    
+
     .col3-wrap{
-            cursor: pointer;
-          @extend .boxsizing;
-          @include trasition;
-              /*background: $color2;*/
+        cursor: pointer;
+        @extend .boxsizing;
+        @include trasition;
+        /*background: $color2;*/
         border: 1px solid $color1;
-           /*color:$color1;*/
+        /*color:$color1;*/
         h3{
             padding: 20px 0 5px 0;
         }  
         p{
             font-size: 16px;
-             @extend .boxsizing;
-              padding: 20px;
-                /*background: $color2;*/
+            @extend .boxsizing;
+            padding: 20px;
+            /*background: $color2;*/
         }
         .img-wrap{
             @extend .boxsizing;
             font-size:84px;
-          
-             /*background: $color2;*/
-            color:#2c97de;;
-              padding: 20px;
-            
+
+            /*background: $color2;*/
+            color:$color3;;
+            padding: 20px;
+              @include trasition;
             img{
                 height: 100%;;
             }
@@ -159,28 +162,78 @@ h1{
     text-align: center;
     background: $color1;
 
-    .col3-wrap{
-        width: 33.333%;
-        font-size: 16px;
-        padding: 1px;
-        @extend .left;
-        .col{
-            @extend .boxsizing;
-            padding: 5%;
-            min-height: 150px;
-            -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
-            -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
-            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
-            background:#fff;
-            p{font-size: 16px; font-weight: 400;}
+    /*    .col3-wrap{
+            width: 33.333%;
+            font-size: 16px;
+            padding: 1px;
+            @extend .left;
+            .col{
+                @extend .boxsizing;
+                padding: 5%;
+                min-height: 150px;
+                -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+                -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+                box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+                background:#fff;
+                p{font-size: 16px; font-weight: 400;}
+            }
+    
+        }*/
+    ul{
+        text-align: left;
+        overflow: visible;
+        border-left:1px solid $color2;
+        .step{
+              position: absolute;
+                left: 0px;
+                top: 45%;
+                content: "Step 1";
+                -ms-transform: rotate(90deg); /* IE 9 */
+                -webkit-transform: rotate(90deg); /* Safari */
+                transform: rotate(90deg);
+        }
+        
+        li{
+            position: relative;
+            overflow: hidden;
+            padding-left:25px;
+            margin-bottom: 25px;
+          
+            display: block;
+            background:#fff; 
+            .list-icon,.list-content{
+                @extend .left;
+            }
+            .list-icon{
+                position: relative;
+                font-size: 70px;
+                padding: 15px;
+                height: 86px;
+                color: #2b3e51;
+                width: 10%;
+            }
+            .list-content{
+                padding-top: 15px;
+                width:90%;
+                p{font-family: $mw;}
+            }
+            &:before{
+/*                position: absolute;
+                left: 0px;
+                top: 50%;
+                content: "Step 1";
+                -ms-transform: rotate(90deg);  IE 9 
+                -webkit-transform: rotate(90deg);  Safari 
+                transform: rotate(90deg);*/
+            }
         }
 
     }
-    
+
 }
 .section3{
     .dark-color{color: $color3 !important; padding-top: 30px;  }
-  background: $color1;
+    background: $color1;
     background-position: center;
     h2{
         &:after{
@@ -195,7 +248,7 @@ h1{
     .about-wrapper{
         padding: 30px 10px 10px 10px;
         overflow: hidden;
-        
+
         @extend .boxsizing;
         h2{
             margin-bottom: 40px;
@@ -263,11 +316,11 @@ h1{
             width: 72%;            
             margin:0 auto;
             padding-top: 20px;
-                 transform: translateX(-19%);
-                    -webkit-transform: translateX(-19%);
+            transform: translateX(-19%);
+            -webkit-transform: translateX(-19%);
             .right{
                 position: relative;
-            
+
                 h4{
                     font-family: 'Merriweather', serif;
                     font-size: 24px;
@@ -286,7 +339,7 @@ h1{
                     position: relative;
                     /*top: 48px;*/
                     right: -118px;
-               
+
                 }
             }
         }
@@ -316,12 +369,14 @@ h1{
     background: rgba(0,0,0,0.9);
     padding: 100px 0;
     font-size:20px;
-    color: $color1;
+    color:#227fbb;
+   
 
-    h2{font-weight: 600;}
+    h4{font-weight: 600; color:$color1;}
     a{ 
         @include trasition();
-        color: $color2;
+        color:#227fbb;
+        //color: $color2;
         &:hover{color: #fff;}
     }
     .footer-menu,.address{
@@ -329,6 +384,7 @@ h1{
         overflow: hidden;
         border-right: 1px solid $color2;
         min-height: 200px;
+        font-size: 16px;
     }
     .footer-menu{
 
@@ -345,7 +401,7 @@ h1{
     }
     .contact-form{
         //$color: #6a6a61;
-        $font_size: 16px;
+        $font_size: 14px;
         @include placeholder($color2,$font_size);
         input,textarea{
             width: 100%;
@@ -356,7 +412,7 @@ h1{
             @extend .boxsizing;
             margin-bottom: 30px;
             outline: none;
-            font-size: 16px;
+            font-size: 14px;
         }
         textarea{
             min-width: 100%;
@@ -390,10 +446,10 @@ h1{
                 margin-right: 36px;
                 z-index: 9999;
                 a{
-                     color:$color6;
-                     &:hover{
-                         color: #fff;
-                     }
+                    color:$color6;
+                    &:hover{
+                        color: #fff;
+                    }
                 }
             }
     }
@@ -435,15 +491,15 @@ h1{
             //width: 0%;
         }
         &:hover{
-          //  border-bottom: 1px solid $color5;
-          &:after{
-             animation-name: line_animation;
-            animation-duration: 4s;
-          }
-            
-            
+            //  border-bottom: 1px solid $color5;
+            &:after{
+                animation-name: line_animation;
+                animation-duration: 4s;
+            }
+
+
         }
-       
+
         /*z-index: 9;*/
     }
 }
