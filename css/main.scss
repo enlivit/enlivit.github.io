@@ -52,10 +52,12 @@ a:hover, a:active, a:focus{outline: 0;}
                }
             }
         }
+        &:hover li a{filter:blur(1px);&:hover{filter:blur(0px);}}
     }
 
 }
 .header{
+    
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -86,6 +88,7 @@ background: url(../img/himal1.jpg);
         position: absolute;
         text-transform: uppercase;
         z-index: 999;
+        
         .inner{
             width: 735px;
             display: inline-block;
@@ -93,10 +96,12 @@ background: url(../img/himal1.jpg);
                 font-size: 40px;
                 //font-weight: 700;
                 margin-bottom: 1em;
+                text-shadow: 1px 1px 2px black;
             }
             p{
                 font-size: 20px;
                 line-height: 1.3em;
+                text-shadow: 1px 1px 2px black;
             }
 
             .ebtn{margin-top: 30px; border-color: $color1; color: $color1; &:hover{border-color: $color2; color: $color3; }}
@@ -246,7 +251,7 @@ background: url(../img/himal1.jpg);
         //background-color: red;
     }
     .about-wrapper{
-        padding: 30px 10px 10px 10px;
+        padding: 30px 15px 15px 15px;
         overflow: hidden;
 
         @extend .boxsizing;

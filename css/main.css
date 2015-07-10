@@ -176,6 +176,10 @@ a:hover, a:active, a:focus {
     .nav1 ul li a.nav1hover, .nav1 ul li a:hover {
       background-color: #227fbb;
       color: #fff; }
+  .nav1 ul:hover li a {
+    filter: blur(1px); }
+    .nav1 ul:hover li a:hover {
+      filter: blur(0px); }
 
 .header {
   position: relative;
@@ -208,10 +212,12 @@ a:hover, a:active, a:focus {
       display: inline-block; }
       .header .welcome_msg .inner h2 {
         font-size: 40px;
-        margin-bottom: 1em; }
+        margin-bottom: 1em;
+        text-shadow: 1px 1px 2px black; }
       .header .welcome_msg .inner p {
         font-size: 20px;
-        line-height: 1.3em; }
+        line-height: 1.3em;
+        text-shadow: 1px 1px 2px black; }
       .header .welcome_msg .inner .ebtn {
         margin-top: 30px;
         border-color: #ecf0f1;
@@ -338,7 +344,7 @@ a:hover, a:active, a:focus {
   .section3 .slider-wrapper {
     margin-top: 20px; }
   .section3 .about-wrapper {
-    padding: 30px 10px 10px 10px;
+    padding: 30px 15px 15px 15px;
     overflow: hidden; }
     .section3 .about-wrapper h2 {
       margin-bottom: 40px; }
