@@ -52,7 +52,7 @@ a:hover, a:active, a:focus{outline: 0;}
                }
             }
         }
-        &:hover li a{filter:blur(1px);&:hover{filter:blur(0px);}}
+        &:hover li a{filter:blur(1px);-webkit-filter:blur(1px);&:hover{-webkit-filter:blur(0px);}}
     }
 
 }

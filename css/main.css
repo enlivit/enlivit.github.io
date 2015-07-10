@@ -177,9 +177,10 @@ a:hover, a:active, a:focus {
       background-color: #227fbb;
       color: #fff; }
   .nav1 ul:hover li a {
-    filter: blur(1px); }
+    filter: blur(1px);
+    -webkit-filter: blur(1px); }
     .nav1 ul:hover li a:hover {
-      filter: blur(0px); }
+      -webkit-filter: blur(0px); }
 
 .header {
   position: relative;
