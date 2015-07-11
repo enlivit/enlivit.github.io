@@ -712,6 +712,9 @@ a:hover, a:active, a:focus {
   .header .godown {
     bottom: 45px; }
 
+  .header h2 {
+    bottom: 34px; }
+
   .section2 .project_thumb
   li {
     position: relative;
