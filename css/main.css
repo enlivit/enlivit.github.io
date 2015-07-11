@@ -127,7 +127,8 @@ body {
   background-color: #fff; }
 
 p {
-  font-family: 'Merriweather', serif; }
+  font-family: 'Merriweather', serif;
+  font-weight: 300; }
 
 section {
   position: relative;
@@ -220,9 +221,10 @@ a:hover, a:active, a:focus {
         margin-bottom: 1em;
         text-shadow: 1px 1px 2px black; }
       .header .welcome_msg .inner h4 {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.3em;
-        text-shadow: 1px 1px 2px black; }
+        text-shadow: 1px 1px 2px black;
+        font-weight: 300; }
       .header .welcome_msg .inner .ebtn {
         margin-top: 30px;
         font-size: 18px;

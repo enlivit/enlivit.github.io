@@ -7,7 +7,7 @@
 .container{max-width: 1170px; width: 100%; }
 body{ font-family: 'Lato', sans-serif;   overflow-x: hidden; line-height: 1.3em; }
 .body-wrap{height: 100%; background-color: #fff;}
-p{font-family: 'Merriweather', serif;}//font-family: 'Lato', sans-serif; font-weight: 300;  }
+p{font-family: 'Merriweather', serif; font-weight: 300;}//font-family: 'Lato', sans-serif; font-weight: 300;  }
 section{position: relative; padding: 74px 0; h2{margin-bottom: 80px; color: #000 !important; font-weight: 400;}}
 h2{text-transform: uppercase;}
 a:hover, a:active, a:focus{outline: 0;}
@@ -101,9 +101,10 @@ background-attachment: fixed;
                 text-shadow: 1px 1px 2px black;
             }
             h4{
-                font-size: 20px;
+                font-size: 24px;
                 line-height: 1.3em;
                 text-shadow: 1px 1px 2px black;
+                font-weight: 300;
             }
 
             .ebtn{margin-top: 30px;font-size: 18px; border-color: $color1; color: $color1; &:hover{border-color: $color3; color: $color3; }}
