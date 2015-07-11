@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
     $(".mobile-menu-btn").click(function () {
         $(".body-wrap").toggleClass("body-left");
         $(".mobile-menu").toggleClass("menu-left");
-		  $(".mobile-menu-btn").toggleClass("menu-btn-left");
+        $(".mobile-menu-btn").toggleClass("menu-btn-left");
     });
 
     $(".godown").click(function (e) {
@@ -55,14 +55,21 @@ jQuery(document).ready(function ($) {
             }
         });
     });
-$(window).scroll(function(){
-    if($(document).scrollTop() > 30){
-        $('.mobile-menu-btn').fadeOut('slow');
-    }else{
-         $('.mobile-menu-btn').fadeIn('slow');
-    }
-})
-$("#tools").owlCarousel({
+    $(window).scroll(function () {
+
+        if ($('.body-wrap').hasClass('body-left')) {
+            $('.mobile-menu-btn').fadeIn();
+        } else {
+            if ($(document).scrollTop() > 30) {
+                $('.mobile-menu-btn').fadeOut();
+
+            } else {
+                $('.mobile-menu-btn').fadeIn();
+
+            }
+        }
+    })
+    $("#tools").owlCarousel({
         items: 4,
 //        navigation: true,
         autoPlay: true,
@@ -70,7 +77,7 @@ $("#tools").owlCarousel({
         itemsDesktop: [1199, 4],
         itemsDesktopSmall: [980, 4],
         itemsTablet: [768, 4],
-        itemsMobile:	[479,3]
+        itemsMobile: [479, 3]
     });
     $("#tm").owlCarousel({
         items: 1,
@@ -81,9 +88,9 @@ $("#tools").owlCarousel({
         itemsDesktopSmall: [980, 1],
         itemsTablet: [768, 1],
     });
-    var windowHeight=$(window).height();
-    $(".header").css({height:windowHeight+"px"});
-    
+    var windowHeight = $(window).height();
+    $(".header").css({height: windowHeight + "px"});
+
 });
 
 
