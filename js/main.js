@@ -55,7 +55,13 @@ jQuery(document).ready(function ($) {
             }
         });
     });
-
+$(window).scroll(function(){
+    if($(document).scrollTop() > 30){
+        $('.mobile-menu-btn').fadeOut('slow');
+    }else{
+         $('.mobile-menu-btn').fadeIn('slow');
+    }
+})
 $("#tools").owlCarousel({
         items: 4,
 //        navigation: true,
@@ -63,7 +69,8 @@ $("#tools").owlCarousel({
         pagination: false,
         itemsDesktop: [1199, 4],
         itemsDesktopSmall: [980, 4],
-        itemsTablet: [768, 4]
+        itemsTablet: [768, 4],
+        itemsMobile:	[479,3]
     });
     $("#tm").owlCarousel({
         items: 1,

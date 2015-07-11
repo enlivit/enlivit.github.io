@@ -604,7 +604,7 @@ background: url(../img/himal2.jpg);
     .nav1    { position: relative;
                ul{display: none;}   
     }
-    .mobile-menu-btn{display: inline-block; position: absolute;right: 0px; @include trasition();}
+    .mobile-menu-btn{display: inline-block; position: fixed;right: 0px; @include trasition();}
     .mobile-menu{display: block;}
     .section2 .project_thumb 
     li 

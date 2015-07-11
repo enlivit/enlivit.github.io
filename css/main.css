@@ -672,7 +672,7 @@ a:hover, a:active, a:focus {
 
   .mobile-menu-btn {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     right: 0px;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
