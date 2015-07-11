@@ -713,7 +713,7 @@ a:hover, a:active, a:focus {
     bottom: 45px; }
 
   .header .welcome_msg .inner h2 {
-    bottom: 34px; }
+    font-size: 34px !important; }
 
   .section2 .project_thumb
   li {
