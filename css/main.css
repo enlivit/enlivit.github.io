@@ -358,14 +358,14 @@ a:hover, a:active, a:focus {
   .section3 .bg, .section3 .img {
     min-height: 402px; }
   .section3 .bg {
-    background-color: #227fbb; }
+    background-color: rgba(44, 151, 222, 0.3); }
   .section3 .img {
     background: url(../img/computer-people1.jpg);
     height: 402px;
     background-size: 200%;
     background-position: center; }
   .section3 p, .section3 h2 {
-    color: #fff !important; }
+    color: #000 !important; }
   .section3 .ebtn {
     color: #fff;
     border-color: #fff;

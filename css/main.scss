@@ -234,6 +234,7 @@ background-attachment: fixed;
     .dark-color{color: $color3 !important; padding-top: 30px;  }
     background: $color1;
     background-position: center;
+ 
     h2{
         &:after{
             background-color: #fff;
@@ -255,7 +256,9 @@ background-attachment: fixed;
     }
     .bg, .img{  min-height: 402px;}
     .bg{
-        background-color: $color2;
+        //background-color: $color2;
+        background-color: rgba(44, 151, 222, 0.3);
+        
     }
     .img{
         background: url(../img/computer-people1.jpg);
@@ -264,7 +267,7 @@ background-attachment: fixed;
         background-position: center;
     }
     text-align: center;
-    p,h2{color: #fff !important;}
+    p,h2{color: #000 !important;}
     .ebtn{
         color: #fff;
         border-color: #fff;
