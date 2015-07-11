@@ -56,7 +56,15 @@ jQuery(document).ready(function ($) {
         });
     });
 
-
+$("#tools").owlCarousel({
+        items: 4,
+//        navigation: true,
+        autoPlay: true,
+        pagination: false,
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [980, 4],
+        itemsTablet: [768, 4]
+    });
     $("#tm").owlCarousel({
         items: 1,
 //        navigation: true,
@@ -66,6 +74,9 @@ jQuery(document).ready(function ($) {
         itemsDesktopSmall: [980, 1],
         itemsTablet: [768, 1],
     });
+    var windowHeight=$(window).height();
+    $(".header").css({height:windowHeight+"px"});
+    
 });
 
 

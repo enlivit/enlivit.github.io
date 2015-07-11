@@ -127,8 +127,7 @@ body {
   background-color: #fff; }
 
 p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300; }
+  font-family: 'Merriweather', serif; }
 
 section {
   position: relative;
@@ -136,13 +135,16 @@ section {
   section h2 {
     margin-bottom: 80px;
     color: #000 !important;
-    font-weight: 700; }
+    font-weight: 400; }
 
 h2 {
   text-transform: uppercase; }
 
 a:hover, a:active, a:focus {
   outline: 0; }
+
+.owl-theme .owl-controls .owl-page span {
+  background: #17c27d; }
 
 .nav1 {
   position: fixed;
@@ -174,13 +176,14 @@ a:hover, a:active, a:focus {
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
     .nav1 ul li a.nav1hover, .nav1 ul li a:hover {
-      background-color: #227fbb;
+      background-color: #2b3e51;
       color: #fff; }
   .nav1 ul:hover li a {
     filter: blur(1px);
     -webkit-filter: blur(1px); }
     .nav1 ul:hover li a:hover {
-      -webkit-filter: blur(0px); }
+      -webkit-filter: blur(0px);
+      filter: blur(0px); }
 
 .header {
   position: relative;
@@ -192,7 +195,7 @@ a:hover, a:active, a:focus {
           rgba(255,255,255,.8)
           ),
           url(../img/banner.jpg);*/
-  background: url(../img/himal1.jpg);
+  background: url(../img/himal2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto; }
@@ -215,16 +218,17 @@ a:hover, a:active, a:focus {
         font-size: 40px;
         margin-bottom: 1em;
         text-shadow: 1px 1px 2px black; }
-      .header .welcome_msg .inner p {
+      .header .welcome_msg .inner h4 {
         font-size: 20px;
         line-height: 1.3em;
         text-shadow: 1px 1px 2px black; }
       .header .welcome_msg .inner .ebtn {
         margin-top: 30px;
+        font-size: 18px;
         border-color: #ecf0f1;
         color: #ecf0f1; }
         .header .welcome_msg .inner .ebtn:hover {
-          border-color: #227fbb;
+          border-color: #2b3e51;
           color: #2b3e51; }
   .header .godown {
     text-align: center;
@@ -271,59 +275,57 @@ a:hover, a:active, a:focus {
       .section1 .col3-wrap:hover .img-wrap {
         color: #ecf0f1; }
 
+#tools {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto 0 auto; }
+
+.tools-item {
+  height: 100px;
+  width: 100px;
+  background-size: cover !important; }
+
 .section2 {
   text-align: center;
-  background: #ecf0f1;
-  /*    .col3-wrap{
-          width: 33.333%;
-          font-size: 16px;
-          padding: 1px;
-          @extend .left;
-          .col{
-              @extend .boxsizing;
-              padding: 5%;
-              min-height: 150px;
-              -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
-              -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
-              box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
-              background:#fff;
-              p{font-size: 16px; font-weight: 400;}
-          }
-  
-      }*/ }
+  background: #ecf0f1; }
   .section2 ul {
     text-align: left;
     overflow: visible;
-    border-left: 1px solid #227fbb; }
+    border-left: 1px solid #227fbb;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; }
     .section2 ul .step {
       position: absolute;
-      left: 0px;
-      top: 45%;
-      content: "Step 1";
-      -ms-transform: rotate(90deg);
-      /* IE 9 */
-      -webkit-transform: rotate(90deg);
-      /* Safari */
-      transform: rotate(90deg); }
+      left: 8px;
+      font-size: 24px;
+      font-weight: 700;
+      top: 14%;
+      color: #ecf0f1; }
     .section2 ul li {
       position: relative;
       overflow: hidden;
       padding-left: 25px;
-      margin-bottom: 25px;
+      padding-bottom: 10px;
+      margin-bottom: 3px;
       display: block;
       background: #fff; }
+      .section2 ul li .center {
+        top: 68%; }
       .section2 ul li .list-icon {
         position: relative;
         font-size: 70px;
         padding: 15px;
         height: 86px;
         color: #2b3e51;
-        width: 10%; }
+        width: 20%; }
       .section2 ul li .list-content {
         padding-top: 15px;
-        width: 90%; }
+        width: 80%;
+        float: right; }
         .section2 ul li .list-content p {
-          font-family: "Merriweather", serif; }
+          font-family: "Merriweather", serif;
+          padding-right: 10px; }
       .section2 ul li:before {
         /*                position: absolute;
                         left: 0px;
@@ -349,6 +351,8 @@ a:hover, a:active, a:focus {
     overflow: hidden; }
     .section3 .about-wrapper h2 {
       margin-bottom: 40px; }
+  .section3 .bg, .section3 .img {
+    min-height: 402px; }
   .section3 .bg {
     background-color: #227fbb; }
   .section3 .img {
@@ -432,6 +436,18 @@ a:hover, a:active, a:focus {
     position: relative; }
     .section4 .col5-wrap img {
       max-width: 100%; }
+
+.testimonial {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  color: #ecf0f1;
+  background: url(../img/rara.jpg);
+  background-position: center;
+  background-size: 100%; }
+  .testimonial h2 {
+    margin-bottom: 20px;
+    color: #ecf0f1 !important; }
 
 .footer {
   position: relative;
@@ -629,6 +645,9 @@ a:hover, a:active, a:focus {
     .section2 .project_thumb
     li img {
       height: 100%; } }
+@media (max-width: 950px) {
+  .section3 .img {
+    background-size: 300%; } }
 @media (max-width: 900px) {
   .nav1 h1 {
     margin: 0px;
@@ -653,7 +672,7 @@ a:hover, a:active, a:focus {
 
   .mobile-menu-btn {
     display: inline-block;
-    position: fixed;
+    position: absolute;
     right: 0px;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -673,13 +692,21 @@ a:hover, a:active, a:focus {
       height: 100%; }
 
   .menu-btn-left {
-    right: 250px; } }
+    right: 250px;
+    position: fixed; }
+
+  .testimonial {
+    background-size: cover;
+    height: auto; } }
 @media (max-width: 767px) {
   h2 {
     font-size: 24px !important; }
 
   p {
     font-size: 16px !important; }
+
+  .header .godown {
+    bottom: 45px; }
 
   .section2 .project_thumb
   li {
@@ -689,6 +716,9 @@ a:hover, a:active, a:focus {
     .section2 .project_thumb
     li img {
       height: auto; }
+
+  .section2 ul li .list-content p {
+    padding: 0px 10px; }
 
   .header .welcome_msg .inner {
     width: 100%; }
@@ -703,7 +733,7 @@ a:hover, a:active, a:focus {
        
         text-align: center;*/
     bottom: -20px;
-    right: 35%; }
+    /*right: 35%;*/ }
 
   .section3 #tm {
     width: 90%; }
@@ -718,6 +748,29 @@ a:hover, a:active, a:focus {
   .section3 #tm .owl-item {
     font-size: 16px; }
 
+  .section3 .s-3-2, .section3 .s-3-1 {
+    width: 100%; }
+
+  .section2 ul li {
+    padding-left: 0px; }
+
+  .section2 ul li .list-icon {
+    width: 100%; }
+
+  .section2 ul li .list-content {
+    width: 100%;
+    text-align: center; }
+
+  .section4 .col5-wrap {
+    width: 50%;
+    height: 150px; }
+
+  .section3 .img {
+    height: 200px;
+    min-height: 200px;
+    background-size: 102% auto; }
+
+  /*.section3 .img{background-size: initial;}*/
   .footer .social {
     width: 100%;
     /*margin: 0 2%;*/ }
