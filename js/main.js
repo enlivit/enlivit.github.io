@@ -58,13 +58,13 @@ jQuery(document).ready(function ($) {
     $(window).scroll(function () {
 
         if ($('.body-wrap').hasClass('body-left')) {
-            $('.mobile-menu-btn').fadeIn();
+            $('.mobile-menu-btn').css({opacity:1})
         } else {
             if ($(document).scrollTop() > 30) {
-                $('.mobile-menu-btn').fadeOut();
+                $('.mobile-menu-btn').css({opacity:0});
 
             } else {
-                $('.mobile-menu-btn').fadeIn();
+                $('.mobile-menu-btn').css({opacity:1});
 
             }
         }
