@@ -712,7 +712,7 @@ a:hover, a:active, a:focus {
   .header .godown {
     bottom: 45px; }
 
-  .header h2 {
+  .header .welcome_msg .inner h2 {
     bottom: 34px; }
 
   .section2 .project_thumb
