@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
 //    $(window).resize(function () {
 //        header_height();
 //    });
-
+    header_height();
 });
 
 
