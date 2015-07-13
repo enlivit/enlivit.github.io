@@ -247,7 +247,6 @@ a:hover, a:active, a:focus {
 .section1 {
   text-align: center; }
   .section1 .col3-wrap {
-    cursor: pointer;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -389,7 +388,12 @@ a:hover, a:active, a:focus {
 
 .section4 {
   text-align: center; }
+  .section4 ul {
+    margin: 0px auto;
+    max-width: 498px;
+    width: 90%; }
   .section4 .col5-wrap {
+    width: 50%;
     border: 1px solid #c0c0c0;
     height: 200px;
     margin-right: -1px;

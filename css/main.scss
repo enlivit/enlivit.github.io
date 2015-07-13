@@ -128,7 +128,7 @@ a:hover, a:active, a:focus{outline: 0;}
     text-align: center;
 
     .col3-wrap{
-        cursor: pointer;
+
         @extend .boxsizing;
         @include trasition;
         /*background: $color2;*/
@@ -299,7 +299,14 @@ a:hover, a:active, a:focus{outline: 0;}
 }
 .section4{
     text-align: center;
+    ul{
+        margin: 0px auto;
+        max-width: 498px;
+        width: 90%;
+        
+    }
     .col5-wrap{
+        width: 50%;
         @extend .boxsizing;
         border: 1px solid #c0c0c0;
         height: 200px;
@@ -331,7 +338,7 @@ a:hover, a:active, a:focus{outline: 0;}
             @media(max-width:900px){
                 left: -46px;
             }
-             @media(max-width:767px){
+            @media(max-width:767px){
                 display:none;
             }
         }
