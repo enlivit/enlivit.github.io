@@ -96,9 +96,13 @@ jQuery(document).ready(function ($) {
         var windowHeight = $(window).height();
         $(".header").css({height: windowHeight + "px"});
     }
-//    $(window).resize(function () {
-//        header_height();
-//    });
+    
+ $(window).resize(function () {
+        
+        if($(window).width() < 1025){
+       header_height();
+    }
+    });    
     header_height();
 });
 
