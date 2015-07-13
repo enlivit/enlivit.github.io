@@ -58,18 +58,18 @@ a:hover, a:active, a:focus{outline: 0;}
 
 }
 .header{
-    
+
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 100%;
-/*    background:  linear-gradient(
-        rgba(255,255,255,.8), 
-        rgba(255,255,255,.8)
-        ),
-        url(../img/banner.jpg);*/
-background: url(../img/himal2.jpg);
-background-attachment: fixed;
+    /*    background:  linear-gradient(
+            rgba(255,255,255,.8), 
+            rgba(255,255,255,.8)
+            ),
+            url(../img/banner.jpg);*/
+    background: url(../img/himal2.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto; 
@@ -82,7 +82,7 @@ background-attachment: fixed;
         ul{ 
             left: 20%;
             color: $color1;
-          
+
         }
     }
     .welcome_msg{
@@ -90,7 +90,7 @@ background-attachment: fixed;
         position: absolute;
         text-transform: uppercase;
         z-index: 999;
-        
+
         .inner{
             width: 735px;
             display: inline-block;
@@ -150,7 +150,7 @@ background-attachment: fixed;
             /*background: $color2;*/
             color:$color3;;
             padding: 20px;
-              @include trasition;
+            @include trasition;
             img{
                 height: 100%;;
             }
@@ -164,10 +164,26 @@ background-attachment: fixed;
             }
         }
     }
-   
+
 }
 #tools{ width: 100%; max-width: 600px; margin: 30px auto 0 auto;}
-.tools-item{height: 100px; width: 100px;background-size: cover !important;}
+.tools-item{height: 100px; width: 100px;background-size: cover !important; position: relative;
+            .overlay{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(43,62,81,.8);
+                h4{
+                    color: $color1;
+                    position: relative;
+                    top: 30%;
+                }
+            }
+
+}
 .section2{
     text-align: center;
     background: $color1;
@@ -180,15 +196,15 @@ background-attachment: fixed;
         max-width: 600px;
         margin:0 auto;
         .step{
-              position: absolute;
-                left: 8px;
-                font-size: 24px;
-                font-weight: 700;
-                top: 14%;
-                color: $color1;
-               
+            position: absolute;
+            left: 8px;
+            font-size: 24px;
+            font-weight: 700;
+            top: 14%;
+            color: $color1;
+
         }
-        
+
         li{
             position: relative;
             overflow: hidden;
@@ -208,7 +224,7 @@ background-attachment: fixed;
                 height: 86px;
                 color: #2b3e51;
                 width: 20%;
-                
+
             }
             .list-content{
                 padding-top: 15px;
@@ -217,13 +233,13 @@ background-attachment: fixed;
                 p{font-family: $mw;padding-right: 10px;}
             }
             &:before{
-/*                position: absolute;
-                left: 0px;
-                top: 50%;
-                content: "Step 1";
-                -ms-transform: rotate(90deg);  IE 9 
-                -webkit-transform: rotate(90deg);  Safari 
-                transform: rotate(90deg);*/
+                /*                position: absolute;
+                                left: 0px;
+                                top: 50%;
+                                content: "Step 1";
+                                -ms-transform: rotate(90deg);  IE 9 
+                                -webkit-transform: rotate(90deg);  Safari 
+                                transform: rotate(90deg);*/
             }
         }
 
@@ -234,7 +250,7 @@ background-attachment: fixed;
     .dark-color{color: $color3 !important; padding-top: 30px;  }
     background: $color1;
     background-position: center;
- 
+
     h2{
         &:after{
             background-color: #fff;
@@ -258,7 +274,7 @@ background-attachment: fixed;
     .bg{
         //background-color: $color2;
         background-color: rgba(44, 151, 222, 0.3);
-        
+
     }
     .img{
         background: url(../img/computer-people1.jpg);
@@ -277,76 +293,7 @@ background-attachment: fixed;
             color: $color3;
         }
     }
-    #tm{//testimonial
-        position:relative;
-        &:before{
-            content: "";
-            background: url(../img/open_quote.png);
-            /*            width: 96px;
-                        height: 81px;*/
-            width: 48px;
-            height: 40px;
-            position: absolute;
-            top: -38px;
-            left: -70px;
-            background-size: cover;
-            /*opacity: 0.2;*/
-        }
-        &:after{
-            content: "";
-            background: url(../img/close_quote.png);
-            /*            width: 98px;
-                        height: 84px;*/
-            width: 49px;
-            height: 42px;
-            position: absolute;
-            bottom: 174px;
-            right: -70px;
-            background-size: cover;
-            /*opacity: 0.2;*/
-        }
-        width: 660px;
-        margin: 0 auto;
-        .owl-item{
-            font-family: 'Merriweather', serif;
-            font-size: 18px;
-            color: #000;
-            line-height: 1.3em;
-            font-weight: 300;
 
-        }
-        .client{
-            width: 72%;            
-            margin:0 auto;
-            padding-top: 20px;
-            transform: translateX(-19%);
-            -webkit-transform: translateX(-19%);
-            .right{
-                position: relative;
-
-                h4{
-                    font-family: 'Merriweather', serif;
-                    font-size: 24px;
-                    color: #000;
-                    line-height: 1em;
-                }
-                .position{
-                    font-family: 'Merriweather', serif;
-                    font-size: 18px;
-                    color: $color5;
-                }
-            }
-            .left{
-                img{
-                    width: 50%;
-                    position: relative;
-                    /*top: 48px;*/
-                    right: -118px;
-
-                }
-            }
-        }
-    }
 
 
 }
@@ -366,8 +313,90 @@ background-attachment: fixed;
     }
 }
 .testimonial{
-    width: 100%; height: 300px;text-align: center; color: $color1;background: url(../img/rara.jpg); background-position: center; background-size: 100%;
+    width: 100%;text-align: center; color: $color1;background: url(../img/rara.jpg); background-position: center; background-size: 100%;
     h2{margin-bottom: 20px; color: $color1 !important;}
+    #tm{//testimonial
+        position:relative;
+        &:before{
+            content: "";
+            background: url(../img/open_quote.png);
+            /*            width: 96px;
+                        height: 81px;*/
+            width: 48px;
+            height: 40px;
+            position: absolute;
+            top: -38px;
+            left: -70px;
+            background-size: cover;
+            @media(max-width:900px){
+                left: -46px;
+            }
+             @media(max-width:767px){
+                display:none;
+            }
+        }
+        &:after{
+            content: "";
+            background: url(../img/close_quote.png);
+            /*            width: 98px;
+                        height: 84px;*/
+            width: 49px;
+            height: 42px;
+            position: absolute;
+            top: -37px;
+            right: -70px;
+            background-size: cover;
+            @media(max-width:900px){
+                right: -47px;
+            }
+            @media(max-width:767px){
+                display:none;
+            }
+        }
+        max-width: 660px;
+        width: 100%;
+        margin: 0 auto;
+        .owl-item{
+            font-family: 'Merriweather', serif;
+            font-size: 18px;
+            color: $color1;
+            line-height: 1.3em;
+            font-weight: 300;
+
+        }
+        .client{
+            max-width: 345px;
+            width: 173px;
+            margin:0 auto;
+            padding-top: 5px;
+            .right{
+                float: none;
+                position: relative;
+
+                h4{
+                    font-family: 'Merriweather', serif;
+                    font-size: 16px;
+                    color: $color1;
+                    line-height: 1em;
+                }
+                .position{
+                    font-family: 'Merriweather', serif;
+                    font-size: 14px;
+                    color: $color1;
+                }
+            }
+            .left{
+                float:none;
+                img{
+                    width: 50%;
+                    position: relative;
+                    /*top: 48px;*/
+                    /*right: -118px;*/
+
+                }
+            }
+        }
+    }
 }
 
 .footer{
@@ -378,7 +407,7 @@ background-attachment: fixed;
     padding: 100px 0;
     font-size:20px;
     color:#227fbb;
-   
+
 
     h4{font-weight: 600; color:$color1;}
     a{ 
@@ -632,7 +661,7 @@ background-attachment: fixed;
 @media(max-width:767px){
     h2{font-size: 24px !important; }
     p{font-size: 16px !important;}
-    
+
     .header .godown{bottom: 45px;}
     .header .welcome_msg .inner h2{font-size: 34px !important;}
     .section2 .project_thumb
@@ -644,7 +673,7 @@ background-attachment: fixed;
           height: auto;
       }
     }
-.section2 ul li .list-content p{padding: 0px 10px;}
+    .section2 ul li .list-content p{padding: 0px 10px;}
     .header .welcome_msg .inner {
         width: 100%;
     }

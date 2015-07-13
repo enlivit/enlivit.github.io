@@ -15,7 +15,11 @@ jQuery(document).ready(function ($) {
             scrollTop: $("section").first().offset().top
         }, 1500);
     });
-
+ $(".header .ebtn").click(function (e) {
+        $('html, body').animate({
+            scrollTop: $("#section3").offset().top
+        }, 1500);
+    });
 
 
 
@@ -85,7 +89,7 @@ jQuery(document).ready(function ($) {
     $("#tm").owlCarousel({
         items: 1,
 //        navigation: true,
-        autoPlay: true,
+//        autoPlay: true,
 //        pagination: false
         itemsDesktop: [1199, 1],
         itemsDesktopSmall: [980, 1],
@@ -104,6 +108,13 @@ jQuery(document).ready(function ($) {
     }
     });    
     header_height();
+    
+//    $( ".tools-item" ).bind( "click", function() {
+//  $( this ).children(".overlay").fadeToggle();
+//});
+    $( ".tools-item" ).hover(function() {
+  $( this ).children(".overlay").fadeToggle();
+});
 });
 
 

@@ -287,7 +287,20 @@ a:hover, a:active, a:focus {
 .tools-item {
   height: 100px;
   width: 100px;
-  background-size: cover !important; }
+  background-size: cover !important;
+  position: relative; }
+  .tools-item .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 62, 81, 0.8); }
+    .tools-item .overlay h4 {
+      color: #ecf0f1;
+      position: relative;
+      top: 30%; }
 
 .section2 {
   text-align: center;
@@ -373,62 +386,6 @@ a:hover, a:active, a:focus {
     .section3 .ebtn:hover {
       background-color: #fff;
       color: #2b3e51; }
-  .section3 #tm {
-    position: relative;
-    width: 660px;
-    margin: 0 auto; }
-    .section3 #tm:before {
-      content: "";
-      background: url(../img/open_quote.png);
-      /*            width: 96px;
-                  height: 81px;*/
-      width: 48px;
-      height: 40px;
-      position: absolute;
-      top: -38px;
-      left: -70px;
-      background-size: cover;
-      /*opacity: 0.2;*/ }
-    .section3 #tm:after {
-      content: "";
-      background: url(../img/close_quote.png);
-      /*            width: 98px;
-                  height: 84px;*/
-      width: 49px;
-      height: 42px;
-      position: absolute;
-      bottom: 174px;
-      right: -70px;
-      background-size: cover;
-      /*opacity: 0.2;*/ }
-    .section3 #tm .owl-item {
-      font-family: 'Merriweather', serif;
-      font-size: 18px;
-      color: #000;
-      line-height: 1.3em;
-      font-weight: 300; }
-    .section3 #tm .client {
-      width: 72%;
-      margin: 0 auto;
-      padding-top: 20px;
-      transform: translateX(-19%);
-      -webkit-transform: translateX(-19%); }
-      .section3 #tm .client .right, .section3 #tm .client .nav1 ul, .nav1 .section3 #tm .client ul, .section3 #tm .client .mobile-menu-btn {
-        position: relative; }
-        .section3 #tm .client .right h4, .section3 #tm .client .nav1 ul h4, .nav1 .section3 #tm .client ul h4, .section3 #tm .client .mobile-menu-btn h4 {
-          font-family: 'Merriweather', serif;
-          font-size: 24px;
-          color: #000;
-          line-height: 1em; }
-        .section3 #tm .client .right .position, .section3 #tm .client .nav1 ul .position, .nav1 .section3 #tm .client ul .position, .section3 #tm .client .mobile-menu-btn .position {
-          font-family: 'Merriweather', serif;
-          font-size: 18px;
-          color: #2c97de; }
-      .section3 #tm .client .left img, .section3 #tm .client .nav1 h1 img, .nav1 .section3 #tm .client h1 img, .section3 #tm .client .nav1 ul li img, .nav1 ul .section3 #tm .client li img, .section3 #tm .client .section2 ul li .list-icon img, .section2 ul li .section3 #tm .client .list-icon img, .section3 #tm .client .section2 ul li .list-content img, .section2 ul li .section3 #tm .client .list-content img, .section3 #tm .client .section4 .col5-wrap img, .section4 .section3 #tm .client .col5-wrap img, .section3 #tm .client .footer .social li img, .footer .social .section3 #tm .client li img {
-        width: 50%;
-        position: relative;
-        /*top: 48px;*/
-        right: -118px; }
 
 .section4 {
   text-align: center; }
@@ -443,7 +400,6 @@ a:hover, a:active, a:focus {
 
 .testimonial {
   width: 100%;
-  height: 300px;
   text-align: center;
   color: #ecf0f1;
   background: url(../img/rara.jpg);
@@ -452,6 +408,75 @@ a:hover, a:active, a:focus {
   .testimonial h2 {
     margin-bottom: 20px;
     color: #ecf0f1 !important; }
+  .testimonial #tm {
+    position: relative;
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto; }
+    .testimonial #tm:before {
+      content: "";
+      background: url(../img/open_quote.png);
+      /*            width: 96px;
+                  height: 81px;*/
+      width: 48px;
+      height: 40px;
+      position: absolute;
+      top: -38px;
+      left: -70px;
+      background-size: cover; }
+      @media (max-width: 900px) {
+        .testimonial #tm:before {
+          left: -46px; } }
+      @media (max-width: 767px) {
+        .testimonial #tm:before {
+          display: none; } }
+    .testimonial #tm:after {
+      content: "";
+      background: url(../img/close_quote.png);
+      /*            width: 98px;
+                  height: 84px;*/
+      width: 49px;
+      height: 42px;
+      position: absolute;
+      top: -37px;
+      right: -70px;
+      background-size: cover; }
+      @media (max-width: 900px) {
+        .testimonial #tm:after {
+          right: -47px; } }
+      @media (max-width: 767px) {
+        .testimonial #tm:after {
+          display: none; } }
+    .testimonial #tm .owl-item {
+      font-family: 'Merriweather', serif;
+      font-size: 18px;
+      color: #ecf0f1;
+      line-height: 1.3em;
+      font-weight: 300; }
+    .testimonial #tm .client {
+      max-width: 345px;
+      width: 173px;
+      margin: 0 auto;
+      padding-top: 5px; }
+      .testimonial #tm .client .right, .testimonial #tm .client .nav1 ul, .nav1 .testimonial #tm .client ul, .testimonial #tm .client .mobile-menu-btn {
+        float: none;
+        position: relative; }
+        .testimonial #tm .client .right h4, .testimonial #tm .client .nav1 ul h4, .nav1 .testimonial #tm .client ul h4, .testimonial #tm .client .mobile-menu-btn h4 {
+          font-family: 'Merriweather', serif;
+          font-size: 16px;
+          color: #ecf0f1;
+          line-height: 1em; }
+        .testimonial #tm .client .right .position, .testimonial #tm .client .nav1 ul .position, .nav1 .testimonial #tm .client ul .position, .testimonial #tm .client .mobile-menu-btn .position {
+          font-family: 'Merriweather', serif;
+          font-size: 14px;
+          color: #ecf0f1; }
+      .testimonial #tm .client .left, .testimonial #tm .client .nav1 h1, .nav1 .testimonial #tm .client h1, .testimonial #tm .client .nav1 ul li, .nav1 ul .testimonial #tm .client li, .testimonial #tm .client .section2 ul li .list-icon, .section2 ul li .testimonial #tm .client .list-icon, .testimonial #tm .client .section2 ul li .list-content, .section2 ul li .testimonial #tm .client .list-content, .testimonial #tm .client .section4 .col5-wrap, .section4 .testimonial #tm .client .col5-wrap, .testimonial #tm .client .footer .social li, .footer .social .testimonial #tm .client li {
+        float: none; }
+        .testimonial #tm .client .left img, .testimonial #tm .client .nav1 h1 img, .nav1 .testimonial #tm .client h1 img, .testimonial #tm .client .nav1 ul li img, .nav1 ul .testimonial #tm .client li img, .testimonial #tm .client .section2 ul li .list-icon img, .section2 ul li .testimonial #tm .client .list-icon img, .testimonial #tm .client .section2 ul li .list-content img, .section2 ul li .testimonial #tm .client .list-content img, .testimonial #tm .client .section4 .col5-wrap img, .section4 .testimonial #tm .client .col5-wrap img, .testimonial #tm .client .footer .social li img, .footer .social .testimonial #tm .client li img {
+          width: 50%;
+          position: relative;
+          /*top: 48px;*/
+          /*right: -118px;*/ }
 
 .footer {
   position: relative;
