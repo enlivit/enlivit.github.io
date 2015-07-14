@@ -146,7 +146,7 @@ a:hover, a:active, a:focus {
   outline: 0; }
 
 .owl-theme .owl-controls .owl-page span {
-  background: #17c27d; }
+  background: #000; }
 
 .nav1 {
   position: fixed;
@@ -361,7 +361,7 @@ a:hover, a:active, a:focus {
     color: #2b3e51 !important;
     padding-top: 30px; }
   .section3 h2:after {
-    background-color: #fff; }
+    background-color: #2b3e51; }
   .section3 .slider-wrapper {
     margin-top: 20px; }
   .section3 .about-wrapper {
@@ -372,14 +372,14 @@ a:hover, a:active, a:focus {
   .section3 .bg, .section3 .img {
     min-height: 402px; }
   .section3 .bg {
-    background-color: rgba(44, 151, 222, 0.3); }
+    background-color: #fff; }
   .section3 .img {
     background: url(../img/computer-people1.jpg);
     height: 402px;
     background-size: 200%;
     background-position: center; }
   .section3 p, .section3 h2 {
-    color: #000 !important; }
+    color: #2b3e51 !important; }
   .section3 .ebtn {
     color: #fff;
     border-color: #fff;
@@ -408,11 +408,11 @@ a:hover, a:active, a:focus {
   width: 100%;
   text-align: center;
   color: #ecf0f1;
-  background: url(../img/rara.jpg);
+  background: url(../img/tm.jpg);
   background-position: center;
   background-size: 100%; }
   .testimonial h2 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: #ecf0f1 !important; }
   .testimonial #tm {
     position: relative;

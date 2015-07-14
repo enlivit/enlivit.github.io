@@ -11,7 +11,7 @@ p{font-family: 'Merriweather', serif; font-weight: 300; line-height: 1.3em;}//fo
 section{position: relative; padding: 74px 0; h2{margin-bottom: 80px; color: #000 !important; font-weight: 400;}}
 h2{text-transform: uppercase;}
 a:hover, a:active, a:focus{outline: 0;}
-.owl-theme .owl-controls .owl-page span{background: $color6;}
+.owl-theme .owl-controls .owl-page span{background: #000;}
 
 .nav1{
     position: fixed;
@@ -254,7 +254,7 @@ a:hover, a:active, a:focus{outline: 0;}
 
     h2{
         &:after{
-            background-color: #fff;
+            background-color: $color3;
         }
     }
     .slider-wrapper{
@@ -273,8 +273,8 @@ a:hover, a:active, a:focus{outline: 0;}
     }
     .bg, .img{  min-height: 402px;}
     .bg{
-        //background-color: $color2;
-        background-color: rgba(44, 151, 222, 0.3);
+      background-color: #fff;
+        //background-color: rgba(44, 151, 222, 0.3);
 
     }
     .img{
@@ -284,7 +284,7 @@ a:hover, a:active, a:focus{outline: 0;}
         background-position: center;
     }
     text-align: center;
-    p,h2{color: #000 !important;}
+    p,h2{color: $color3 !important;}
     .ebtn{
         color: #fff;
         border-color: #fff;
@@ -321,8 +321,8 @@ a:hover, a:active, a:focus{outline: 0;}
     }
 }
 .testimonial{
-    width: 100%;text-align: center; color: $color1;background: url(../img/rara.jpg); background-position: center; background-size: 100%;
-    h2{margin-bottom: 20px; color: $color1 !important;}
+    width: 100%;text-align: center; color: $color1;background: url(../img/tm.jpg); background-position: center; background-size: 100%;
+    h2{margin-bottom: 50px; color: $color1 !important;}
     #tm{//testimonial
         position:relative;
         &:before{
