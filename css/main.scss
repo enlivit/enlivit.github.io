@@ -68,7 +68,7 @@ a:hover, a:active, a:focus{outline: 0;}
             rgba(255,255,255,.8)
             ),
             url(../img/banner.jpg);*/
-    background: url(../img/himal2.jpg);
+    background: url(../img/workplace2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ a:hover, a:active, a:focus{outline: 0;}
                 font-weight: 300;
             }
 
-            .ebtn{margin-top: 30px;font-size: 18px; border-color: $color1; color: $color1; &:hover{border-color: $color3; color: $color3; }}
+            .ebtn{background: #fff;margin-top: 30px;font-size: 18px; border-color: $color1; color: $color3; &:hover{border-color: $color3; color: $color3; }}
 
         }
 

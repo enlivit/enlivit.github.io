@@ -197,7 +197,7 @@ a:hover, a:active, a:focus {
           rgba(255,255,255,.8)
           ),
           url(../img/banner.jpg);*/
-  background: url(../img/himal2.jpg);
+  background: url(../img/workplace2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -227,10 +227,11 @@ a:hover, a:active, a:focus {
         text-shadow: 1px 1px 2px black;
         font-weight: 300; }
       .header .welcome_msg .inner .ebtn {
+        background: #fff;
         margin-top: 30px;
         font-size: 18px;
         border-color: #ecf0f1;
-        color: #ecf0f1; }
+        color: #2b3e51; }
         .header .welcome_msg .inner .ebtn:hover {
           border-color: #2b3e51;
           color: #2b3e51; }
