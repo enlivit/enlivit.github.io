@@ -133,6 +133,7 @@ a:hover, a:active, a:focus{outline: 0;}
         @include trasition;
         /*background: $color2;*/
         border: 1px solid $color1;
+        min-height:396px;
         /*color:$color1;*/
         h3{
             padding: 20px 0 5px 0;

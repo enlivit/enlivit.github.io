@@ -253,6 +253,7 @@ a:hover, a:active, a:focus {
     transition: all 0.5s ease-out;
     /*background: $color2;*/
     border: 1px solid #ecf0f1;
+    min-height: 396px;
     /*color:$color1;*/
     padding-bottom: 20px; }
     .section1 .col3-wrap h3 {
