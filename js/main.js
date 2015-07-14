@@ -89,7 +89,7 @@ jQuery(document).ready(function ($) {
     $("#tm").owlCarousel({
         items: 1,
 //        navigation: true,
-//        autoPlay: true,
+        autoPlay: true,
 //        pagination: false
         itemsDesktop: [1199, 1],
         itemsDesktopSmall: [980, 1],
