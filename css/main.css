@@ -214,12 +214,10 @@ a:hover, a:active, a:focus {
       display: inline-block; }
       .header .welcome_msg .inner h2 {
         font-size: 40px;
-        margin-bottom: 1em;
-        text-shadow: 1px 1px 2px black; }
+        margin-bottom: 1em; }
       .header .welcome_msg .inner h4 {
         font-size: 24px;
         line-height: 1.3em;
-        text-shadow: 1px 1px 2px black;
         font-weight: 300; }
       .header .welcome_msg .inner .ebtn {
         background: #fff;
