@@ -316,7 +316,7 @@ a:hover, a:active, a:focus{outline: 0;}
     }
 }
 .testimonial{
-    width: 100%;text-align: center; color: $color1;background: url(../img/tm.jpg); background-position: center; background-size: 100%;
+    width: 100%;text-align: center; color: $color1;background: #227FBB; background-position: center; background-size: 100%;
     h2{margin-bottom: 50px; color: $color1 !important;}
     #tm{//testimonial
         position:relative;
@@ -406,7 +406,8 @@ a:hover, a:active, a:focus{outline: 0;}
     position: relative;
     bottom: 0;
     width: 100%;
-    background: rgba(0,0,0,0.9);
+    background: #000;
+    //background: rgba(0,0,0,0.9);
     padding: 100px 0;
     font-size:20px;
     color:#227fbb;
@@ -503,6 +504,7 @@ a:hover, a:active, a:focus{outline: 0;}
     padding: 30px 0;
 }
 .map-wrapper{
+    display: none;
     position: relative;
     height: 200px;
     width: 100%; 
