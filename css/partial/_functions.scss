@@ -4,12 +4,6 @@
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
-@mixin trasition_time($time){    
-    -webkit-transition: all $time ease-out;
-    -moz-transition: all $time ease-out;
-    -o-transition: all $time ease-out;
-    transition: all $time ease-out;
-}
 
 @mixin placeholder($color,$font_size){
     ::-webkit-input-placeholder {
