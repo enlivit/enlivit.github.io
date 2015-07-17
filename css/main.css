@@ -254,7 +254,7 @@ a:hover, a:active, a:focus {
     .section1 .col3-wrap .img-wrap {
       font-size: 84px;
       /*background: $color2;*/
-      color: #2b3e51;
+      color: #227fbb;
       padding: 20px;
       -webkit-transition: all 0.5s ease-out;
       -moz-transition: all 0.5s ease-out;
@@ -323,7 +323,7 @@ a:hover, a:active, a:focus {
         font-size: 70px;
         padding: 15px;
         height: 86px;
-        color: #2b3e51;
+        color: #227fbb;
         width: 20%; }
       .section2 ul li .list-content {
         padding-top: 15px;
@@ -563,39 +563,14 @@ a:hover, a:active, a:focus {
   padding: 30px 0; }
 
 .map-wrapper {
-  display: none;
   position: relative;
-  height: 200px;
+  height: 400px;
   width: 100%; }
   .map-wrapper #map-canvas {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0; }
-  .map-wrapper .map-overlay {
-    display: block;
-    content: "";
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    /*z-index: 9;*/ }
-    .map-wrapper .map-overlay:after {
-      content: "";
-      position: absolute;
-      bottom: 0px;
-      height: 1px;
-      background: #2c97de; }
-    .map-wrapper .map-overlay:hover:after {
-      animation-name: line_animation;
-      animation-duration: 4s; }
 
 .close1 {
   display: none;
