@@ -1,55 +1,68 @@
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
 new WOW().init();
+
 jQuery(document).ready(function($) {
-    $(".mobile-menu-btn").click(function() {
-        $(".body-wrap").toggleClass("body-left");
-        $(".mobile-menu").toggleClass("menu-left");
-        $(".mobile-menu-btn").toggleClass("menu-btn-left");
+  $(".mobile-menu-btn").click(function() {
+    $(".body-wrap").toggleClass("body-left");
+    $(".mobile-menu").toggleClass("menu-left");
+    $(".mobile-menu-btn").toggleClass("menu-btn-left");
+  });
+  $(".godown").click(function(e) {
+    $('html, body').animate({
+      scrollTop: $("section").first().offset().top
+    }, 1500);
+  });
+  $(".header .ebtn").click(function(e) {
+    $('html, body').animate({
+      scrollTop: $("#section3").offset().top
+    }, 1500);
+  });
+  //google maps show event
+  $(".view_map,.map-overlay").click(function(e) {
+    e.preventDefault();
+    //$(".footer").slideUp();
+    $(".map-overlay").fadeOut();
+    $(".close1").fadeIn();
+  });
+  //
+  $(".close1").click(function() {
+    $(".map-overlay").fadeIn();
+    $(".close1").fadeOut();
+  });
+  //scroll and hightlight menu
+  $(".mobile-menu ul li a, .nav1 ul li a, .footer ul li a").click(function(e) {
+    e.preventDefault();
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    $('html, body').animate({
+      scrollTop: $(refElement).offset().top
+    }, 1500);
+  });
+  $(window).scroll(function(event) {
+    var scrollPos = $(document).scrollTop();
+    $('.nav1 ul li a').each(function() {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('.nav1 ul li a').removeClass("nav1hover");
+        currLink.addClass("nav1hover");
+      } else {
+        currLink.removeClass("nav1hover");
+      }
     });
-    $(".godown").click(function(e) {
-        $('html, body').animate({
-            scrollTop: $("section").first().offset().top
-        }, 1500);
-    });
-    $(".header .ebtn").click(function(e) {
-        $('html, body').animate({
-            scrollTop: $("#section3").offset().top
-        }, 1500);
-    });
-    //google maps show event
-    $(".view_map,.map-overlay").click(function(e) {
-        e.preventDefault();
-        //$(".footer").slideUp();
-        $(".map-overlay").fadeOut();
-        $(".close1").fadeIn();
-    });
-    //
-    $(".close1").click(function() {
-        $(".map-overlay").fadeIn();
-        $(".close1").fadeOut();
-    });
-    //scroll and hightlight menu
-    $(".mobile-menu ul li a, .nav1 ul li a").click(function(e) {
-        e.preventDefault();
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        $('html, body').animate({
-            scrollTop: $(refElement).offset().top
-        }, 1500);
-    });
-    $(window).scroll(function(event) {
-        var scrollPos = $(document).scrollTop();
-        $('.nav1 ul li a').each(function() {
-            var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $('.nav1 ul li a').removeClass("nav1hover");
-                currLink.addClass("nav1hover");
-            } else {
-                currLink.removeClass("nav1hover");
-            }
+  });
+  $(window).scroll(function() {
+    if ($('.body-wrap').hasClass('body-left')) {
+      $('.mobile-menu-btn').css({
+        opacity: 1
+      })
+    } else {
+      if ($(document).scrollTop() > 30) {
+        $('.mobile-menu-btn').css({
+          opacity: 0
         });
+<<<<<<< HEAD
         
         if(scrollPos > $(".section1").position().top){
             $(".nav1").css({ background:'rgba(0,0,0,.9)'});
@@ -99,22 +112,56 @@ jQuery(document).ready(function($) {
         var windowHeight = $(window).height();
         $(".header").css({
             height: windowHeight + "px"
+=======
+      } else {
+        $('.mobile-menu-btn').css({
+          opacity: 1
+>>>>>>> origin/master
         });
+      }
     }
-    $(window).resize(function() {
-        if ($(window).width() < 1025) {
-            header_height();
-        }
+  });
+  $("#tools").owlCarousel({
+    items: 4,
+    //        navigation: true,
+    autoPlay: true,
+    pagination: false,
+    itemsDesktop: [1199, 4],
+    itemsDesktopSmall: [980, 4],
+    itemsTablet: [768, 4],
+    itemsMobile: [479, 3]
+  });
+  $("#tm").owlCarousel({
+    items: 1,
+    //        navigation: true,
+    autoPlay: true,
+    //        pagination: false
+    itemsDesktop: [1199, 1],
+    itemsDesktopSmall: [980, 1],
+    itemsTablet: [768, 1],
+  });
+
+  function header_height() {
+    var windowHeight = $(window).height();
+    $(".header").css({
+      height: windowHeight + "px"
     });
-    header_height();
-    //    $( ".tools-item" ).bind( "click", function() {
-    //  $( this ).children(".overlay").fadeToggle();
-    //});
-    $(".tools-item").hover(function() {
-        $(this).children(".overlay").fadeToggle();
-    });
+  }
+  $(window).resize(function() {
+    if ($(window).width() < 1025) {
+      header_height();
+    }
+  });
+  header_height();
+  //    $( ".tools-item" ).bind( "click", function() {
+  //  $( this ).children(".overlay").fadeToggle();
+  //});
+  $(".tools-item").hover(function() {
+    $(this).children(".overlay").fadeToggle();
+  });
 });
 
+<<<<<<< HEAD
 //google maps
 //function initialize() {
 //    [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
@@ -200,3 +247,5 @@ var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+=======
+>>>>>>> origin/master
