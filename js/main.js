@@ -49,6 +49,11 @@ jQuery(document).ready(function($) {
             } else {
                 currLink.removeClass("nav1hover");
             }
+             if(scrollPos > $(".section1").position().top){
+            $(".nav1").css({ background:'rgba(0,0,0,.9)'});
+        }else if(scrollPos <= $(".section1").position().top){
+                $(".nav1").css({ background:'rgba(0,0,0,.3)'});
+        }
         });
     });
     $(window).scroll(function() {
