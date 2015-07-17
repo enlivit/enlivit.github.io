@@ -50,6 +50,12 @@ jQuery(document).ready(function($) {
                 currLink.removeClass("nav1hover");
             }
         });
+        
+        if(scrollPos > $(".section1").position().top){
+            $(".nav1").css({ background:'rgba(0,0,0,.9)'});
+        }else if(scrollPos <= $(".section1").position().top){
+                $(".nav1").css({ background:'rgba(0,0,0,.3)'});
+        }
     });
     $(window).scroll(function() {
         if ($('.body-wrap').hasClass('body-left')) {
@@ -67,6 +73,7 @@ jQuery(document).ready(function($) {
                 });
             }
         }
+        
     });
     $("#tools").owlCarousel({
         items: 4,
@@ -109,14 +116,84 @@ jQuery(document).ready(function($) {
 });
 
 //google maps
+//function initialize() {
+//    [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+//    var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
+//    var mapOptions = {
+//        center: myLatlng,
+//        zoom: 16
+//    };
+//    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+//    var marker = new google.maps.Marker({
+//        position: myLatlng,
+//        map: map,
+//        title: 'Enliv Information Technology'
+//    });
+//}
+
 function initialize() {
-    var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
-    var mapOptions = {
-        center: myLatlng,
-        zoom: 16
-    };
-    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    var marker = new google.maps.Marker({
+var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
+  // Create an array of styles.
+    
+//  var styles = [
+//    {
+//      stylers: [
+//        { hue: "#00ffe6" },
+//        { saturation: -20 }
+//      ]
+//    },{
+//      featureType: "road",
+//      elementType: "geometry",
+//      stylers: [
+//        { lightness: 100 },
+//        { visibility: "simplified" }
+//      ]
+//    },{
+//      featureType: "road",
+//      elementType: "labels",
+//      stylers: [
+//        { visibility: "off" }
+//      ]
+//    }
+//  ];
+
+    var styles = [
+  {
+    "stylers": [
+      { "hue": "#00a1ff" },
+      { "saturation": 2 }
+    ]
+  }
+];
+    
+    
+  // Create a new StyledMapType object, passing it the array of styles,
+  // as well as the name to be displayed on the map type control.
+  var styledMap = new google.maps.StyledMapType(styles,
+    {name: "Styled Map"});
+
+  // Create a map object, and include the MapTypeId to add
+  // to the map type control.
+  var mapOptions = {
+    zoom: 16,
+       navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+        scrollwheel: false,
+       //draggable: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: new google.maps.LatLng(27.7069179, 85.3375574),
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  };
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+    mapOptions);
+
+  //Associate the styled map with the MapTypeId and set it to display.
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
         title: 'Enliv Information Technology'
