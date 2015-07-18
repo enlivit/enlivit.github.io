@@ -635,6 +635,7 @@ a:hover, a:active, a:focus{outline: 0;}
     .body-wrap{@include trasition();left: 0px; position: relative;z-index: 9;}
     .body-left{left: -250px;}
     .nav1    { position: relative;
+                background: #000;
                ul{display: none;}   
     }
     .mobile-menu-btn{display: inline-block; position: fixed;right: 0px; @include trasition();}
