@@ -77,16 +77,16 @@ jQuery(document).ready(function($) {
             }
         }
     });
-    $("#tools").owlCarousel({
-        items: 4,
-        //        navigation: true,
-        autoPlay: true,
-        pagination: false,
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [980, 4],
-        itemsTablet: [768, 4],
-        itemsMobile: [479, 3]
-    });
+//    $("#tools").owlCarousel({
+//        items: 4,
+//    
+//        autoPlay: true,
+//        pagination: false,
+//        itemsDesktop: [1199, 4],
+//        itemsDesktopSmall: [980, 4],
+//        itemsTablet: [768, 4],
+//        itemsMobile: [479, 3]
+//    });
     $("#tm").owlCarousel({
         items: 1,
         //        navigation: true,

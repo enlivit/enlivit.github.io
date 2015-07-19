@@ -38,7 +38,7 @@ html, body {
   to {
     width: 100%; } }
 /*COLORS LISTs*/
-.left, .nav1 h1, .nav1 ul li, .section2 ul li .list-icon, .section2 ul li .list-content, .section4 .col5-wrap, .footer .social li {
+.left, .nav1 h1, .nav1 ul li, .tools-item, .section2 ul li .list-icon, .section2 ul li .list-content, .section4 .col5-wrap, .footer .social li {
   float: left; }
 
 .right, .nav1 ul, .mobile-menu-btn {
@@ -270,14 +270,15 @@ a:hover, a:active, a:focus {
 
 #tools {
   width: 100%;
-  max-width: 600px;
+  max-width: 660px;
   margin: 30px auto 0 auto; }
 
 .tools-item {
   height: 100px;
   width: 100px;
   background-size: cover !important;
-  position: relative; }
+  position: relative;
+  margin: 0px 5px; }
   .tools-item .overlay {
     display: none;
     position: absolute;
@@ -285,9 +286,9 @@ a:hover, a:active, a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(43, 62, 81, 0.8); }
+    background: rgba(236, 240, 241, 0.8); }
     .tools-item .overlay h4 {
-      color: #ecf0f1;
+      color: #2b3e51;
       position: relative;
       top: 30%; }
 
@@ -464,9 +465,9 @@ a:hover, a:active, a:focus {
           font-family: 'Merriweather', serif;
           font-size: 14px;
           color: #ecf0f1; }
-      .testimonial #tm .client .left, .testimonial #tm .client .nav1 h1, .nav1 .testimonial #tm .client h1, .testimonial #tm .client .nav1 ul li, .nav1 ul .testimonial #tm .client li, .testimonial #tm .client .section2 ul li .list-icon, .section2 ul li .testimonial #tm .client .list-icon, .testimonial #tm .client .section2 ul li .list-content, .section2 ul li .testimonial #tm .client .list-content, .testimonial #tm .client .section4 .col5-wrap, .section4 .testimonial #tm .client .col5-wrap, .testimonial #tm .client .footer .social li, .footer .social .testimonial #tm .client li {
+      .testimonial #tm .client .left, .testimonial #tm .client .nav1 h1, .nav1 .testimonial #tm .client h1, .testimonial #tm .client .nav1 ul li, .nav1 ul .testimonial #tm .client li, .testimonial #tm .client .tools-item, .testimonial #tm .client .section2 ul li .list-icon, .section2 ul li .testimonial #tm .client .list-icon, .testimonial #tm .client .section2 ul li .list-content, .section2 ul li .testimonial #tm .client .list-content, .testimonial #tm .client .section4 .col5-wrap, .section4 .testimonial #tm .client .col5-wrap, .testimonial #tm .client .footer .social li, .footer .social .testimonial #tm .client li {
         float: none; }
-        .testimonial #tm .client .left img, .testimonial #tm .client .nav1 h1 img, .nav1 .testimonial #tm .client h1 img, .testimonial #tm .client .nav1 ul li img, .nav1 ul .testimonial #tm .client li img, .testimonial #tm .client .section2 ul li .list-icon img, .section2 ul li .testimonial #tm .client .list-icon img, .testimonial #tm .client .section2 ul li .list-content img, .section2 ul li .testimonial #tm .client .list-content img, .testimonial #tm .client .section4 .col5-wrap img, .section4 .testimonial #tm .client .col5-wrap img, .testimonial #tm .client .footer .social li img, .footer .social .testimonial #tm .client li img {
+        .testimonial #tm .client .left img, .testimonial #tm .client .nav1 h1 img, .nav1 .testimonial #tm .client h1 img, .testimonial #tm .client .nav1 ul li img, .nav1 ul .testimonial #tm .client li img, .testimonial #tm .client .tools-item img, .testimonial #tm .client .section2 ul li .list-icon img, .section2 ul li .testimonial #tm .client .list-icon img, .testimonial #tm .client .section2 ul li .list-content img, .section2 ul li .testimonial #tm .client .list-content img, .testimonial #tm .client .section4 .col5-wrap img, .section4 .testimonial #tm .client .col5-wrap img, .testimonial #tm .client .footer .social li img, .footer .social .testimonial #tm .client li img {
           width: 50%;
           position: relative;
           /*top: 48px;*/
@@ -738,6 +739,14 @@ a:hover, a:active, a:focus {
         text-align: center;*/
     bottom: -20px;
     /*right: 35%;*/ }
+
+  #tools {
+    margin-top: 20px;
+    overflow: hidden;
+    width: 220px; }
+
+  #tools .tools-item {
+    margin-bottom: 10px; }
 
   .section3 #tm {
     width: 90%; }

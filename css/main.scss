@@ -155,8 +155,8 @@ a:hover, a:active, a:focus{outline: 0;}
     }
 
 }
-#tools{ width: 100%; max-width: 600px; margin: 30px auto 0 auto;}
-.tools-item{height: 100px; width: 100px;background-size: cover !important; position: relative;
+#tools{ width: 100%; max-width: 660px; margin: 30px auto 0 auto;}
+.tools-item{height: 100px; width: 100px;background-size: cover !important; position: relative; @extend .left; margin: 0px 5px;
             .overlay{
                 display: none;
                 position: absolute;
@@ -164,9 +164,9 @@ a:hover, a:active, a:focus{outline: 0;}
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: rgba(43,62,81,.8);
+                background: rgba(236,240,241,.8);
                 h4{
-                    color: $color1;
+                    color: $color3;
                     position: relative;
                     top: 30%;
                 }
@@ -689,10 +689,11 @@ a:hover, a:active, a:focus{outline: 0;}
         bottom: -20px;
         /*right: 35%;*/
     }
+    #tools{margin-top: 20px; overflow: hidden; width: 220px;}
+    #tools .tools-item{margin-bottom: 10px;}
     .section3 #tm{width: 90%;}
     .section3 #tm:before{left: -25px;}
-    .section3 #tm:after{bottom: 273px;
-                        right: -25px;}
+    .section3 #tm:after{bottom: 273px;right: -25px;}
     .section3 #tm .owl-item{ font-size: 16px;}
     .section3 .s-3-2,.section3 .s-3-1{width: 100%;}
     .section2 ul li{padding-left: 0px;}
