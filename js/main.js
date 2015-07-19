@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
     });
 //    $("#tools").owlCarousel({
 //        items: 4,
-//    
+//        //        navigation: true,
 //        autoPlay: true,
 //        pagination: false,
 //        itemsDesktop: [1199, 4],
