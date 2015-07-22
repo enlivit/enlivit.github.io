@@ -177,20 +177,21 @@ var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
   // Create a map object, and include the MapTypeId to add
   // to the map type control.
   var mapOptions = {
-    zoom: 16,
-       navigationControl: false,
-    mapTypeControl: false,
-    scaleControl: false,
+        zoom: 16,
+        navigationControl: false,
+        draggable: false,
+        mapTypeControl: false,
+        scaleControl: false,
         scrollwheel: false,
-       //draggable: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    center: new google.maps.LatLng(27.7069179, 85.3375574),
-    mapTypeControlOptions: {
-      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: new google.maps.LatLng(27.7069179, 85.3375574),
+        mapTypeControlOptions: {
+        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
     }
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
     mapOptions);
+    var image = 'img/marker.png';
 
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('map_style', styledMap);
@@ -198,7 +199,8 @@ var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
      var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Enliv Information Technology'
+        title: 'Enliv Information Technology',
+         icon: image
     });
 }
 
