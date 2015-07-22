@@ -192,8 +192,10 @@ var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
   var map = new google.maps.Map(document.getElementById('map-canvas'),
     mapOptions);
     var image = 'img/marker.png';
-
-  //Associate the styled map with the MapTypeId and set it to display.
+    var contentString = "<b>Enliv Information Technologies</b> <br/> Ratopul, Kathmandu";
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
      var marker = new google.maps.Marker({
@@ -202,6 +204,9 @@ var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
         title: 'Enliv Information Technology',
          icon: image
     });
+      google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
 }
 
 
