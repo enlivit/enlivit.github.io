@@ -259,9 +259,11 @@
                     <div class="col-sm-4 col-xs-12">
                         <h4>SAY HELLO</h4>
                         <form class="contact-form" action="http://formspree.io/enlivinfotech@gmail.com" method="POST">
-                            <input type="text" placeholder="Name" required>
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="_gotcha" style="display:none" />
                             <input type="email" name="_replyto" placeholder="Email" required>
-                            <textarea placeholder="Message" required></textarea>
+                            <textarea name="message" placeholder="Message" required></textarea>
+                            <input type="hidden" name="_subject" value="Enliv Website Contact" />
                             <input type="submit" class="ebtn" value="Send">
                         </form>
                     </div>
