@@ -23,9 +23,17 @@ a:hover, a:active, a:focus{outline: 0;}
 
 
     h1{
-        margin: 0px;
+        margin: 8px 0 0 0;
         @extend .left;
-        padding-top: 8px;       
+       // padding-top: 8px;  
+        width: 64px;
+        height: 47px;
+        background-image: url(../img/logo.png); 
+        @media(-webkit-min-device-pixel-ratio: 2), 
+            (min-resolution: 192dpi) { 
+            background-image: url(../img/logo@2x.png); 
+            }
+        background-size: cover;
     }
     ul{
         @extend .right;
@@ -637,14 +645,15 @@ a:hover, a:active, a:focus{outline: 0;}
     .section3 .img{background-size: 300%;}
 }
 @media(max-width:900px){
-    .nav1 h1 {  margin: 0px;  padding: 9px 0;}
+    .nav1 h1 {  margin: 0px;  padding: 0;}
     .body-wrap{@include trasition();left: 0px; position: relative;z-index: 9;}
     .body-left{left: -250px;}
     .nav1    { position: relative;
                 background: #000;
+                padding: 10px 0;
                ul{display: none;}   
     }
-    .mobile-menu-btn{display: inline-block; position: fixed;right: 0px; @include trasition();}
+    .mobile-menu-btn{display: inline-block; position: fixed;top: 0px; right: 0px; @include trasition();}
     .mobile-menu{display: block;}
     .section2 .project_thumb 
     li 
