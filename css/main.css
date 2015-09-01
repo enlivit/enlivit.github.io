@@ -208,14 +208,15 @@ a:hover, a:active, a:focus {
   .header .welcome_msg {
     color: #ecf0f1;
     position: absolute;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     z-index: 999; }
     .header .welcome_msg .inner {
       width: 735px;
       display: inline-block; }
       .header .welcome_msg .inner h2 {
         font-size: 40px;
-        margin-bottom: 1em; }
+        margin-bottom: 1em;
+      }
       .header .welcome_msg .inner h4 {
         font-size: 24px;
         line-height: 1.3em;
