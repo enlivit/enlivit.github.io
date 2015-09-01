@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
     });
     $(".header .ebtn").click(function(e) {
         $('html, body').animate({
-            scrollTop: $("#section3").offset().top
+            scrollTop: $("#footer").offset().top
         }, 1500);
     });
     //google maps show event
