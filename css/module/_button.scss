@@ -5,6 +5,7 @@
     padding: 10px 25px;
     display: inline-block;
     text-decoration: none;
+    background: transparent;
     @include trasition();
 }
 .ebtn:hover{

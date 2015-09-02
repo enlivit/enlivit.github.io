@@ -45,7 +45,7 @@ a:hover, a:active, a:focus{outline: 0;}
                //font-weight: 700;
                font-size: 14px;
                text-transform: uppercase;
-               letter-spacing: 3px;
+                  //      letter-spacing: 3px;
                padding: 23px 14px;
                @include trasition();
                &.nav1hover, &:hover{
@@ -84,7 +84,7 @@ a:hover, a:active, a:focus{outline: 0;}
     .welcome_msg{
         color: $color1;
         position: absolute;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         z-index: 999;
 
         .inner{
@@ -102,8 +102,13 @@ a:hover, a:active, a:focus{outline: 0;}
                // text-shadow: 1px 1px 2px black;
                 font-weight: 300;
             }
+            p{
+                font-size: 24px;
+            }
 
-            .ebtn{background: #fff;margin-top: 30px;font-size: 18px; border-color: $color1; color: $color3; &:hover{border-color: $color3; color: $color3; }}
+            .ebtn{
+                //background: #fff;
+                margin-top: 30px;font-size: 18px; border-color: $color1; color: $color1; &:hover{border-color: $color3; color: $color3; }}
 
         }
 
