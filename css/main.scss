@@ -45,7 +45,7 @@ a:hover, a:active, a:focus{outline: 0;}
                //font-weight: 700;
                font-size: 14px;
                text-transform: uppercase;
-                  //      letter-spacing: 3px;
+                letter-spacing: 1px;
                padding: 23px 14px;
                @include trasition();
                &.nav1hover, &:hover{

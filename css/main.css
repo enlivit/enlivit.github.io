@@ -183,6 +183,7 @@ a:hover, a:active, a:focus {
     display: inline-block;
     font-size: 14px;
     text-transform: uppercase;
+    letter-spacing: 1px;
     padding: 23px 14px;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
