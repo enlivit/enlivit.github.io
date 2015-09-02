@@ -190,7 +190,7 @@ a:hover, a:active, a:focus {
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
     .nav1 ul li a.nav1hover, .nav1 ul li a:hover {
-      background-color: #2b3e51;
+      background-color: #227fbb;
       color: #fff; }
   .nav1 ul:hover li a {
     filter: blur(1px);

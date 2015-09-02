@@ -49,7 +49,7 @@ a:hover, a:active, a:focus{outline: 0;}
                padding: 23px 14px;
                @include trasition();
                &.nav1hover, &:hover{
-                   background-color: $color3;
+                   background-color: $color2;
                    color: #fff;
                }
             }
