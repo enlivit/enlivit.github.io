@@ -93,16 +93,7 @@ jQuery(document).ready(function($) {
             }
         }
     });
-//    $("#tools").owlCarousel({
-//        items: 4,
-//        //        navigation: true,
-//        autoPlay: true,
-//        pagination: false,
-//        itemsDesktop: [1199, 4],
-//        itemsDesktopSmall: [980, 4],
-//        itemsTablet: [768, 4],
-//        itemsMobile: [479, 3]
-//    });
+
     $("#tm").owlCarousel({
         items: 1,
         //        navigation: true,
@@ -125,55 +116,18 @@ jQuery(document).ready(function($) {
         }
     });
     header_height();
-    //    $( ".tools-item" ).bind( "click", function() {
-    //  $( this ).children(".overlay").fadeToggle();
-    //});
+  
     $(".tools-item").hover(function() {
         $(this).children(".overlay").fadeToggle();
     });
 });
 
-//google maps
-//function initialize() {
-//    var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
-//    var mapOptions = {
-//        center: myLatlng,
-//        zoom: 16
-//    };
-//    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-//    var marker = new google.maps.Marker({
-//        position: myLatlng,
-//        map: map,
-//        title: 'Enliv Information Technology'
-//    });
-//}
+
 
 
 function initialize() {
 var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
-  // Create an array of styles.
-    
-//  var styles = [
-//    {
-//      stylers: [
-//        { hue: "#00ffe6" },
-//        { saturation: -20 }
-//      ]
-//    },{
-//      featureType: "road",
-//      elementType: "geometry",
-//      stylers: [
-//        { lightness: 100 },
-//        { visibility: "simplified" }
-//      ]
-//    },{
-//      featureType: "road",
-//      elementType: "labels",
-//      stylers: [
-//        { visibility: "off" }
-//      ]
-//    }
-//  ];
+
 
     var styles = [
   {
@@ -183,15 +137,10 @@ var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
     ]
   }
 ];
-    
-    
-  // Create a new StyledMapType object, passing it the array of styles,
-  // as well as the name to be displayed on the map type control.
+
   var styledMap = new google.maps.StyledMapType(styles,
     {name: "Styled Map"});
 
-  // Create a map object, and include the MapTypeId to add
-  // to the map type control.
   var mapOptions = {
         zoom: 16,
         navigationControl: false,
