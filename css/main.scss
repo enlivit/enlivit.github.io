@@ -302,8 +302,24 @@ a:hover, a:active, a:focus{outline: 0;}
         }
     }
 
-
-
+}
+.client_logo{width: 75px; height: 75px; margin: 0 auto;}
+.sangrahalaya .client_logo{ 
+    background:url(../img/sangralaya_black.png) no-repeat; 
+    background-size: cover;
+    @include trasition();
+    &:hover{
+    background:url(../img/sangralaya.png);
+     background-size: cover; 
+    }
+}
+.srijana .client_logo{ background:url(../img/srijana_logo_black.png) no-repeat;
+    background-size: cover; 
+     @include trasition();
+    &:hover{
+    background:url(../img/srijana_logo.png);
+    background-size: cover; 
+    }
 }
 .section4{
     text-align: center;
@@ -480,6 +496,7 @@ a:hover, a:active, a:focus{outline: 0;}
             border:none;
         }
         .ebtn{
+            font-size: 16px;
             font-size: 16px;
             color:#fff;
             border: 3px solid #fff;

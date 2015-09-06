@@ -398,6 +398,33 @@ a:hover, a:active, a:focus {
       background-color: #fff;
       color: #2b3e51; }
 
+.client_logo {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto; }
+
+.sangrahalaya .client_logo {
+  background: url(../img/sangralaya_black.png) no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .sangrahalaya .client_logo:hover {
+    background: url(../img/sangralaya.png);
+    background-size: cover; }
+
+.srijana .client_logo {
+  background: url(../img/srijana_logo_black.png) no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .srijana .client_logo:hover {
+    background: url(../img/srijana_logo.png);
+    background-size: cover; }
+
 .section4 {
   text-align: center; }
   .section4 ul {
@@ -556,6 +583,7 @@ a:hover, a:active, a:focus {
     width: auto;
     border: none; }
   .footer .contact-form .ebtn {
+    font-size: 16px;
     font-size: 16px;
     color: #fff;
     border: 3px solid #fff;
