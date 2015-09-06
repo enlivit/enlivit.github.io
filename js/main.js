@@ -4,9 +4,9 @@ new WOW().init();
 jQuery(document).ready(function($) {
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top
@@ -26,13 +26,11 @@ jQuery(document).ready(function($) {
             scrollTop: $("section").first().offset().top
         }, 1500);
     });
-    $(".header .ebtn").click(function(e) {
+    $(".header .txt-focus").click(function(e) {
         $('html, body').animate({
-            scrollTop: $("#footer").offset().top
+            scrollTop: $("#contact").offset().top - 115
         }, 1500);
     });
-    
-   
     //google maps show event
     $(".view_map,.map-overlay").click(function(e) {
         e.preventDefault();
@@ -55,8 +53,8 @@ jQuery(document).ready(function($) {
         }, 1500);
     });
     $(window).scroll(function(event) {
-          var nav1_height = $(".nav1").height();
-        var scrollPos = $(document).scrollTop()+nav1_height;
+        var nav1_height = $(".nav1").height();
+        var scrollPos = $(document).scrollTop() + nav1_height;
         $('.nav1 ul li a').each(function() {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
@@ -66,15 +64,17 @@ jQuery(document).ready(function($) {
             } else {
                 currLink.removeClass("nav1hover");
             }
-            if($(window).width()> 900){
-            
-             if(scrollPos > $(".section1").position().top){
-            $(".nav1").css({ background:'rgba(0,0,0,.9)'});
-        }else if(scrollPos <= $(".section1").position().top){
-                $(".nav1").css({ background:'rgba(0,0,0,.3)'});
-        }
+            if ($(window).width() > 900) {
+                if (scrollPos > $(".section1").position().top) {
+                    $(".nav1").css({
+                        background: 'rgba(0,0,0,.9)'
+                    });
+                } else if (scrollPos <= $(".section1").position().top) {
+                    $(".nav1").css({
+                        background: 'rgba(0,0,0,.3)'
+                    });
+                }
             }
-            
         });
     });
     $(window).scroll(function() {
@@ -94,7 +94,6 @@ jQuery(document).ready(function($) {
             }
         }
     });
-
     $("#tm").owlCarousel({
         items: 1,
         //        navigation: true,
@@ -117,32 +116,24 @@ jQuery(document).ready(function($) {
         }
     });
     header_height();
-  
     $(".tools-item").hover(function() {
         $(this).children(".overlay").fadeToggle();
     });
 });
 
-
-
-
 function initialize() {
-var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
-
-
-    var styles = [
-  {
-    "stylers": [
-      { "hue": "#00a1ff" },
-      { "saturation": 2 }
-    ]
-  }
-];
-
-  var styledMap = new google.maps.StyledMapType(styles,
-    {name: "Styled Map"});
-
-  var mapOptions = {
+    var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
+    var styles = [{
+        "stylers": [{
+            "hue": "#00a1ff"
+        }, {
+            "saturation": 2
+        }]
+    }];
+    var styledMap = new google.maps.StyledMapType(styles, {
+        name: "Styled Map"
+    });
+    var mapOptions = {
         zoom: 16,
         navigationControl: false,
         draggable: false,
@@ -152,28 +143,25 @@ var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         center: new google.maps.LatLng(27.7069179, 85.3375574),
         mapTypeControlOptions: {
-        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-    }
-  };
-  var map = new google.maps.Map(document.getElementById('map-canvas'),
-    mapOptions);
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        }
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     var image = 'img/marker.png';
     var contentString = "<b>Enliv Information Technologies</b> <br/> Ratopul, Kathmandu";
-  var infowindow = new google.maps.InfoWindow({
-      content: contentString
-  });
-  map.mapTypes.set('map_style', styledMap);
-  map.setMapTypeId('map_style');
-     var marker = new google.maps.Marker({
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
+    var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
         title: 'Enliv Information Technology',
-         icon: image
+        icon: image
     });
-      google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-  });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+    });
 }
-
-
 google.maps.event.addDomListener(window, 'load', initialize);
