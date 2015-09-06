@@ -55,7 +55,8 @@ jQuery(document).ready(function($) {
         }, 1500);
     });
     $(window).scroll(function(event) {
-        var scrollPos = $(document).scrollTop();
+          var nav1_height = $(".nav1").height();
+        var scrollPos = $(document).scrollTop()+nav1_height;
         $('.nav1 ul li a').each(function() {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
