@@ -197,12 +197,19 @@ a:hover, a:active, a:focus{outline: 0;}
     background: $color1;
 
     ul{
-        text-align: left;
+        //text-align: left;
         overflow: visible;
-        border-left:1px solid $color2;
+        //border-left:1px solid $color2;
         width:100%;
-        max-width: 600px;
+        //max-width: 600px;
         margin:0 auto;
+        @media(max-width: 1170px){
+        max-width: 600px;
+            
+        }
+        @media(max-width: 767px){
+            max-width: 250px;
+        }
         .step{
             position: absolute;
             left: 8px;
@@ -217,38 +224,51 @@ a:hover, a:active, a:focus{outline: 0;}
             position: relative;
             overflow: hidden;
             padding-left:25px;
+            padding-right:25px;
             padding-bottom: 10px;
             margin-bottom: 3px;
             display: block;
-            background:#fff; 
+            background:#fff;
+            width: 250px;
+            height: 250px;
+            float: left;
+            border-radius: 200px;
+            margin: 0 15px;
+              @media(max-width: 1170px){
+                margin-bottom: 30px;
+                }
+            
             .center{top: 68%;}
             .list-icon,.list-content{
                 @extend .left;
             }
             .list-icon{
                 position: relative;
-                font-size: 70px;
+                //font-size: 70px;
+                font-size: 54px;
                 padding: 15px;
                 height: 86px;
                 color: $color2;
-                width: 20%;
+                width: 100%;
+                display: block;
 
             }
             .list-content{
-                padding-top: 15px;
-                width:80%;
-                float:right;
-                p{font-family: $mw;padding-right: 10px;}
+                //padding-top: 15px;
+                //width:80%;
+                //float:right;
+                p{font-family: $mw; font-size: 12px;//padding-right: 10px;
+                }
             }
-            &:before{
-                /*                position: absolute;
-                                left: 0px;
-                                top: 50%;
-                                content: "Step 1";
-                                -ms-transform: rotate(90deg);  IE 9 
-                                -webkit-transform: rotate(90deg);  Safari 
-                                transform: rotate(90deg);*/
-            }
+            //&:before{
+              //                position: absolute;
+                //                left: 0px;
+                  //              top: 50%;
+                    //            content: "Step 1";
+                      //          -ms-transform: rotate(90deg);  IE 9 
+                        //        -webkit-transform: rotate(90deg);  Safari 
+                          //      transform: rotate(90deg);
+            //}
         }
 
     }
@@ -710,7 +730,10 @@ a:hover, a:active, a:focus{outline: 0;}
           height: auto;
       }
     }
-    .section2 ul li .list-content p{padding: 0px 10px;}
+    .section2 ul li .list-content p{
+//        padding: 0px 10px;
+        font-size: 12px !important;
+    }
     .header .welcome_msg .inner {
         width: 100%;
     }
@@ -726,14 +749,14 @@ a:hover, a:active, a:focus{outline: 0;}
         bottom: -20px;
         /*right: 35%;*/
     }
-    #tools{margin-top: 20px; overflow: hidden; width: 220px;}
+    #tools{margin-top: 20px; overflow: hidden; width: 330px;}
     #tools .tools-item{margin-bottom: 10px;}
     .section3 #tm{width: 90%;}
     .section3 #tm:before{left: -25px;}
     .section3 #tm:after{bottom: 273px;right: -25px;}
     .section3 #tm .owl-item{ font-size: 16px;}
     .section3 .s-3-2,.section3 .s-3-1{width: 100%;}
-    .section2 ul li{padding-left: 0px;}
+//    .section2 ul li{padding-left: 0px;}
     .section2 ul li .list-icon{width: 100%;}
     .section2 ul li .list-content{width: 100%; text-align: center;}
     .section4 .col5-wrap{width: 50%; height: 150px;}
@@ -747,4 +770,9 @@ a:hover, a:active, a:focus{outline: 0;}
         margin: 0 2%;
     }
     .footer .footer-menu, .footer .address{border-right: none;}
+}
+@media(max-width:400px){
+    #tools{
+    width: 220px;
+    }
 }

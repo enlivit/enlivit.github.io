@@ -44,4 +44,14 @@ p{font-size: 16px;}
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.txt-focus{color: #17c27d; font-size: 24px;font-style: italic; font-weight: 700; @include trasition();}
+.txt-focus{
+    color: #17c27d; 
+    font-size: 24px;
+    font-style: italic; 
+    font-weight: 700; 
+    @include trasition();
+    cursor: pointer;
+    @media(max-width:767px){
+        font-size: 16px;
+    }
+}

@@ -104,7 +104,11 @@ p {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  cursor: pointer; }
+  @media (max-width: 767px) {
+    .txt-focus {
+      font-size: 16px; } }
 
 .ebtn {
   font-size: 22px;
@@ -317,12 +321,15 @@ a:hover, a:active, a:focus {
   text-align: center;
   background: #ecf0f1; }
   .section2 ul {
-    text-align: left;
     overflow: visible;
-    border-left: 1px solid #227fbb;
     width: 100%;
-    max-width: 600px;
     margin: 0 auto; }
+    @media (max-width: 1170px) {
+      .section2 ul {
+        max-width: 600px; } }
+    @media (max-width: 767px) {
+      .section2 ul {
+        max-width: 250px; } }
     .section2 ul .step {
       position: absolute;
       left: 8px;
@@ -334,34 +341,32 @@ a:hover, a:active, a:focus {
       position: relative;
       overflow: hidden;
       padding-left: 25px;
+      padding-right: 25px;
       padding-bottom: 10px;
       margin-bottom: 3px;
       display: block;
-      background: #fff; }
+      background: #fff;
+      width: 250px;
+      height: 250px;
+      float: left;
+      border-radius: 200px;
+      margin: 0 15px; }
+      @media (max-width: 1170px) {
+        .section2 ul li {
+          margin-bottom: 30px; } }
       .section2 ul li .center {
         top: 68%; }
       .section2 ul li .list-icon {
         position: relative;
-        font-size: 70px;
+        font-size: 54px;
         padding: 15px;
         height: 86px;
         color: #227fbb;
-        width: 20%; }
-      .section2 ul li .list-content {
-        padding-top: 15px;
-        width: 80%;
-        float: right; }
-        .section2 ul li .list-content p {
-          font-family: "Merriweather", serif;
-          padding-right: 10px; }
-      .section2 ul li:before {
-        /*                position: absolute;
-                        left: 0px;
-                        top: 50%;
-                        content: "Step 1";
-                        -ms-transform: rotate(90deg);  IE 9 
-                        -webkit-transform: rotate(90deg);  Safari 
-                        transform: rotate(90deg);*/ }
+        width: 100%;
+        display: block; }
+      .section2 ul li .list-content p {
+        font-family: "Merriweather", serif;
+        font-size: 12px; }
 
 .section3 {
   background: #ecf0f1;
@@ -774,7 +779,7 @@ a:hover, a:active, a:focus {
       height: auto; }
 
   .section2 ul li .list-content p {
-    padding: 0px 10px; }
+    font-size: 12px !important; }
 
   .header .welcome_msg .inner {
     width: 100%; }
@@ -794,7 +799,7 @@ a:hover, a:active, a:focus {
   #tools {
     margin-top: 20px;
     overflow: hidden;
-    width: 220px; }
+    width: 330px; }
 
   #tools .tools-item {
     margin-bottom: 10px; }
@@ -814,9 +819,6 @@ a:hover, a:active, a:focus {
 
   .section3 .s-3-2, .section3 .s-3-1 {
     width: 100%; }
-
-  .section2 ul li {
-    padding-left: 0px; }
 
   .section2 ul li .list-icon {
     width: 100%; }
@@ -844,5 +846,8 @@ a:hover, a:active, a:focus {
 
   .footer .footer-menu, .footer .address {
     border-right: none; } }
+@media (max-width: 400px) {
+  #tools {
+    width: 220px; } }
 
 /*# sourceMappingURL=main.css.map */
