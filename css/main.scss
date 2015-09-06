@@ -223,17 +223,17 @@ a:hover, a:active, a:focus{outline: 0;}
         li{
             position: relative;
             overflow: hidden;
-            padding-left:25px;
-            padding-right:25px;
+            padding-left:20px;
+            padding-right:20px;
             padding-bottom: 10px;
             margin-bottom: 3px;
             display: block;
             background:#fff;
-            width: 250px;
-            height: 250px;
+            width: 270px;
+            height: 270px;
             float: left;
             border-radius: 200px;
-            margin: 0 15px;
+            margin: 0 7px;
               @media(max-width: 1170px){
                 margin-bottom: 30px;
                 }
@@ -254,21 +254,11 @@ a:hover, a:active, a:focus{outline: 0;}
 
             }
             .list-content{
-                //padding-top: 15px;
-                //width:80%;
-                //float:right;
-                p{font-family: $mw; font-size: 12px;//padding-right: 10px;
+              
+                p{font-family: $mw; font-size: 14px;
                 }
             }
-            //&:before{
-              //                position: absolute;
-                //                left: 0px;
-                  //              top: 50%;
-                    //            content: "Step 1";
-                      //          -ms-transform: rotate(90deg);  IE 9 
-                        //        -webkit-transform: rotate(90deg);  Safari 
-                          //      transform: rotate(90deg);
-            //}
+          
         }
 
     }
