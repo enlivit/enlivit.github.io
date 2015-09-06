@@ -31,6 +31,8 @@ jQuery(document).ready(function($) {
             scrollTop: $("#footer").offset().top
         }, 1500);
     });
+    
+   
     //google maps show event
     $(".view_map,.map-overlay").click(function(e) {
         e.preventDefault();
