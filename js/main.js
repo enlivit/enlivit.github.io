@@ -157,7 +157,7 @@ function initialize() {
     var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Enliv Information Technology',
+        title: 'Enliv Information Technologies',
         icon: image
     });
     google.maps.event.addListener(marker, 'click', function() {
