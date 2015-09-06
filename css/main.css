@@ -330,13 +330,6 @@ a:hover, a:active, a:focus {
     @media (max-width: 767px) {
       .section2 ul {
         max-width: 250px; } }
-    .section2 ul .step {
-      position: absolute;
-      left: 8px;
-      font-size: 24px;
-      font-weight: 700;
-      top: 14%;
-      color: #ecf0f1; }
     .section2 ul li {
       position: relative;
       overflow: hidden;
