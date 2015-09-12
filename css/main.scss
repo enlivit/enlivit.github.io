@@ -7,7 +7,8 @@
 .container{max-width: 1170px; width: 100%; }
 body{ font-family: 'Lato', sans-serif;   overflow-x: hidden; line-height: 1.3em; }
 .body-wrap{height: 100%; background-color: #fff;}
-p{font-family: 'Merriweather', serif; font-weight: 300; line-height: 1.3em;}//font-family: 'Lato', sans-serif; font-weight: 300;  }
+p, blockquote{font-family: 'Merriweather', serif; font-weight: 300; line-height: 1.3em;}//font-family: 'Lato', sans-serif; font-weight: 300;  }
+.italic { font-style: italic }
 section{position: relative; padding: 74px 0; h2{margin-bottom: 80px; color: #000 !important; font-weight: 400;}}
 h2{text-transform: uppercase;}
 a:hover, a:active, a:focus{outline: 0;}
