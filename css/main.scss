@@ -308,20 +308,27 @@ a:hover, a:active, a:focus{outline: 0;}
 }
 .client_logo{width: 75px; height: 75px; margin: 0 auto;}
 .sangrahalaya .client_logo{ 
-    background:url(../img/sangralaya_black.png) no-repeat; 
+    background:url(../img/sangralaya.png) no-repeat; 
     background-size: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     @include trasition();
     &:hover{
     background:url(../img/sangralaya.png);
      background-size: cover; 
-    }
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+   }
 }
-.srijana .client_logo{ background:url(../img/srijana_logo_black.png) no-repeat;
+.srijana .client_logo{ background:url(../img/srijana_logo.png) no-repeat;
     background-size: cover; 
+      -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
      @include trasition();
     &:hover{
-    background:url(../img/srijana_logo.png);
     background-size: cover; 
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
     }
 }
 .section4{

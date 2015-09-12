@@ -405,26 +405,33 @@ a:hover, a:active, a:focus {
   margin: 0 auto; }
 
 .sangrahalaya .client_logo {
-  background: url(../img/sangralaya_black.png) no-repeat;
+  background: url(../img/sangralaya.png) no-repeat;
   background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
   .sangrahalaya .client_logo:hover {
     background: url(../img/sangralaya.png);
-    background-size: cover; }
+    background-size: cover;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
 
 .srijana .client_logo {
-  background: url(../img/srijana_logo_black.png) no-repeat;
+  background: url(../img/srijana_logo.png) no-repeat;
   background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
   .srijana .client_logo:hover {
-    background: url(../img/srijana_logo.png);
-    background-size: cover; }
+    background-size: cover;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
 
 .section4 {
   text-align: center; }
