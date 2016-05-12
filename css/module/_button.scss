@@ -1,6 +1,6 @@
-.ebtn{
+.ebtn {
     font-size: 22px;
-    color:$color3;
+    color: $color3;
     border: 3px solid $color3;
     padding: 10px 25px;
     display: inline-block;
@@ -8,7 +8,7 @@
     background: transparent;
     @include trasition();
 }
-.ebtn:hover{
+.ebtn:hover {
     background: #fff;
     color: $color3;
     border: 3px solid #fff;
