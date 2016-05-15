@@ -172,6 +172,7 @@ a:hover {
         /*background: $color2;*/
         border: 1px solid $color1;
         min-height: 396px;
+        cursor: pointer;
         /*color:$color1;*/
         h3 {
             padding: 20px 0 5px;
@@ -222,6 +223,7 @@ a:hover {
     .overlay {
         display: none;
         position: absolute;
+        cursor: default;
         top: 0;
         left: 0;
         width: 100%;
@@ -249,7 +251,7 @@ a:hover {
             max-width: 600px;
         }
         @media(max-width: 767px) {
-            max-width: 250px;
+            max-width: 265px;
         }
         li {
             position: relative;
@@ -260,8 +262,8 @@ a:hover {
             margin-bottom: 3px;
             display: block;
             background: #fff;
-            width: 270px;
-            height: 270px;
+            width: 265px;
+            height: 265px;
             float: left;
             border-radius: 200px;
             margin: 0 7px;
@@ -397,6 +399,15 @@ a:hover {
         img {
             max-width: 100%;
         }
+    }
+}
+.description {
+    text-align: left;
+    background-color: $color1;
+    p {
+        font-size: 17px;
+        @extend .boxsizing;
+        padding: 10px;
     }
 }
 .testimonial {
