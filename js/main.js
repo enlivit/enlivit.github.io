@@ -123,7 +123,7 @@ jQuery(document).ready(function($) {
 
 function initialize() {
     var headOfficeLatLng = new google.maps.LatLng(27.7069179, 85.3375574);
-    var chakupatBranchLatLng = new google.maps.LatLng(27.6787963, 85.3202482);
+    var chakupatBranchLatLng = new google.maps.LatLng(27.6787366, 85.3224274);
     var styles = [{
         "stylers": [{
             "hue": "#00a1ff"
@@ -138,9 +138,9 @@ function initialize() {
         zoom: 14,
         navigationControl: true,
         draggable: true,
-        mapTypeControl: false,
+        mapTypeControl: true,
         scaleControl: true,
-        scrollwheel: false,
+        scrollwheel: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         center: new google.maps.LatLng(27.695702, 85.329218),
         mapTypeControlOptions: {
