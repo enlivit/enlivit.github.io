@@ -135,14 +135,14 @@ function initialize() {
         name: "Styled Map"
     });
     var mapOptions = {
-        zoom: 13,
+        zoom: 14,
         navigationControl: true,
         draggable: true,
         mapTypeControl: false,
         scaleControl: true,
-        scrollwheel: true,
+        scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: headOfficeLatLng,
+        center: new google.maps.LatLng(27.695702, 85.329218),
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
         }
