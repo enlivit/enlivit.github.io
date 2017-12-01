@@ -355,14 +355,15 @@ a:hover {
     height: 75px;
     margin: 0 auto;
 }
-.sangrahalaya .client_logo {
-    background: url("../img/sangralaya.png") no-repeat;
+
+.whitehat .client_logo {
+    background: url("../img/whitehat.png") no-repeat;
     background-size: cover;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     @include trasition();
     &:hover {
-        background: url("../img/sangralaya.png");
+        background: url("../img/whitehat.png");
         background-size: cover;
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
