@@ -122,7 +122,8 @@ jQuery(document).ready(function($) {
 });
 
 function initialize() {
-    var myLatlng = new google.maps.LatLng(27.7069179, 85.3375574);
+    var headOfficeLatLng = new google.maps.LatLng(27.7069179, 85.3375574);
+    var chakupatBranchLatLng = new google.maps.LatLng(27.6787963, 85.3202482);
     var styles = [{
         "stylers": [{
             "hue": "#00a1ff"
@@ -134,34 +135,45 @@ function initialize() {
         name: "Styled Map"
     });
     var mapOptions = {
-        zoom: 16,
-        navigationControl: false,
-        draggable: false,
+        zoom: 13,
+        navigationControl: true,
+        draggable: true,
         mapTypeControl: false,
-        scaleControl: false,
-        scrollwheel: false,
+        scaleControl: true,
+        scrollwheel: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: new google.maps.LatLng(27.7069179, 85.3375574),
+        center: headOfficeLatLng,
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
         }
     };
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     var image = 'img/marker.png';
-    var contentString = "<b>Enliv Information Technologies</b> <br/> Ratopul, Kathmandu";
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
+    var headOfficeInfoWindow = new google.maps.InfoWindow({
+        content: "<b>Enliv Information Technologies</b> <br/> Ratopul, Kathmandu"
+    });
+    var chakupatBranchInfoWindow = new google.maps.InfoWindow({
+        content: "<b>Enliv Information Technologies</b> <br/> Chakupat, Lalitpur"
     });
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
-    var marker = new google.maps.Marker({
-        position: myLatlng,
+    var headOfficeMarker = new google.maps.Marker({
+        position: headOfficeLatLng,
         map: map,
         title: 'Enliv Information Technologies',
         icon: image
     });
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
+    var chakupatBranchMarker = new google.maps.Marker({
+        position: chakupatBranchLatLng,
+        map: map,
+        title: 'Enliv Information Technologies',
+        icon: image
+    });
+    google.maps.event.addListener(headOfficeMarker, 'click', function() {
+        headOfficeInfoWindow.open(map, headOfficeMarker);
+    });
+    google.maps.event.addListener(chakupatBranchMarker, 'click', function() {
+        chakupatBranchInfoWindow.open(map, chakupatBranchMarker);
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
