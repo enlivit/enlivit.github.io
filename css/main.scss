@@ -529,7 +529,7 @@ a:hover {
         line-height: 1.6em;
         overflow: hidden;
         border-right: 1px solid $color2;
-        min-height: 200px;
+        min-height: 50px;
         font-size: 16px;
     }
     .footer-menu {
@@ -586,7 +586,7 @@ a:hover {
         }
     }
     .social {
-        width: 243px;
+        width: 280px;
         margin: 0 auto;
         li {
             @extend .left;
