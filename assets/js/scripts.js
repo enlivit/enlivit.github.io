@@ -57,7 +57,7 @@ LANDING PAGE JS
 
 	});
 	
-	//Hide Navbar Dropdown After Click On Links
+	// Hide Navbar Dropdown After Click On Links
 	var navBar = $(".header_wrap");
 	var navbarLinks = navBar.find(".navbar-collapse ul li a");
 
@@ -69,7 +69,8 @@ LANDING PAGE JS
           navBar.find(".navbar-collapse").collapse('hide');
         });
 
-    });
+	});
+
 	
 	//Main navigation Active Class Add Remove
 	$('.navbar-toggler').on('click', function() {
