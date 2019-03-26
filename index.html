@@ -515,7 +515,9 @@
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     marker = new L.marker([27.681346, 85.322239]);
-    marker.addTo(map);
+    marker.addTo(map)
+    .bindPopup('<a href="https://goo.gl/maps/dz24UriWgsS2">Enliv Information Technologies</a>"')
+    .openPopup();
   </script>
   <!-- START FOOTER SECTION -->
   <footer>
